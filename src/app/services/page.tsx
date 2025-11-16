@@ -30,19 +30,22 @@ export default function ServicesPage() {
             icon={<Database className="h-12 w-12" />}
             title="Data & Analytics"
             description="Transform messy spreadsheets into strategic insights. Custom Power BI dashboards that give you clarity on your business performance."
-            href="/services/power-bi-dashboards"
+            services={['Power BI Dashboards', 'Data Visualization', 'Business Intelligence']}
+            link="/services/power-bi-dashboards"
           />
           <ServiceCard
             icon={<Zap className="h-12 w-12" />}
             title="Business Automation"
             description="Eliminate repetitive tasks and human error. Automated workflows that give you time back to focus on growth."
-            href="/services/excel-automation"
+            services={['Excel Automation', 'Workflow Automation', 'Process Optimization']}
+            link="/services/excel-automation"
           />
           <ServiceCard
             icon={<Globe className="h-12 w-12" />}
             title="Web & eCommerce"
             description="Build high-converting Shopify stores and custom web applications. Your digital storefront optimized for global sales."
-            href="/services/web-ecommerce"
+            services={['Shopify Stores', 'Custom Websites', 'eCommerce Solutions']}
+            link="/services/web-ecommerce"
           />
         </div>
 
