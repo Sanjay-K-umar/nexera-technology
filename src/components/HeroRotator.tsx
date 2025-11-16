@@ -255,9 +255,14 @@ function SEODemo() {
 }
 
 export function HeroRotator() {
-  const [currentVariant, setCurrentVariant] = useState(() => {
-    return heroVariants[Math.floor(Math.random() * heroVariants.length)]
-  })
+  const [currentVariant, setCurrentVariant] = useState(heroVariants[0])
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    // Select random variant only on client side to avoid hydration mismatch
+    setCurrentVariant(heroVariants[Math.floor(Math.random() * heroVariants.length)])
+    setIsClient(true)
+  }, [])
 
   const renderDemo = () => {
     switch (currentVariant.demo) {
