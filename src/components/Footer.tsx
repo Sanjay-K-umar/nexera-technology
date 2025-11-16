@@ -95,17 +95,17 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services/shopify-development" className="text-sm text-primary-foreground/80 hover:text-white transition-colors">
+                <Link href="/services/web-ecommerce" className="text-sm text-primary-foreground/80 hover:text-white transition-colors">
                   Shopify Development
                 </Link>
               </li>
               <li>
-                <Link href="/services/website-development" className="text-sm text-primary-foreground/80 hover:text-white transition-colors">
+                <Link href="/services/web-ecommerce" className="text-sm text-primary-foreground/80 hover:text-white transition-colors">
                   Website Development
                 </Link>
               </li>
               <li>
-                <Link href="/services/workflow-automation" className="text-sm text-primary-foreground/80 hover:text-white transition-colors">
+                <Link href="/services/excel-automation" className="text-sm text-primary-foreground/80 hover:text-white transition-colors">
                   Workflow Automation
                 </Link>
               </li>
