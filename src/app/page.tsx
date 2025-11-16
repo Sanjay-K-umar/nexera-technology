@@ -23,7 +23,7 @@ export default function Home() {
         <HeroVideo />
         <div className="hero-video-overlay" />
         
-        <div className="relative z-10 flex h-full items-center">
+        <div className="relative z-20 flex h-full items-center">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Left side - Main content */}
