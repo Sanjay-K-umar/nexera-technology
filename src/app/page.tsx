@@ -27,12 +27,12 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Left side - Main content */}
-              <div className="animate-fade-in-up">
-                <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              <div className="animate-fade-in-up bg-black/30 backdrop-blur-sm p-8 rounded-2xl">
+                <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                   Stop Guessing. <br />
-                  <span className="text-blue-400">Start Growing.</span>
+                  <span className="text-blue-300">Start Growing.</span>
                 </h1>
-                <p className="text-xl text-gray-200 mb-8 leading-relaxed">
+                <p className="text-xl md:text-2xl text-white mb-8 leading-relaxed drop-shadow-md">
                   Nexera turns your business complexity into clarity. Your global partner for Data, Web, and Automation, based right here in the GTA.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
