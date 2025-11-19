@@ -8,7 +8,7 @@ import { Toaster } from '@/components/ui/toaster'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratech.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratechnco.com'),
   title: {
     default: 'Nexera Technology and Consultancy | Data Services, Web Development & Automation Near Me | Mississauga, GTA, Ontario',
     template: '%s | Nexera Tech & Co'
@@ -39,13 +39,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_CA',
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratech.com',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratechnco.com',
     siteName: 'Nexera Technology and Consultancy | Nexera Tech & Co',
     title: 'Nexera Technology | Data Services, Web Development & Automation Near Me | Mississauga',
     description: 'Nexera Tech & Co - Expert data services, web development services, and business automation near you. Serving Mississauga, Brampton, Toronto, GTA, and Ontario.',
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratech.com'}/og-image.jpg`,
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratechnco.com'}/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: 'Nexera Technology and Consultancy - Data Services & Web Development',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Nexera Technology | Data Services & Web Development Near Me',
     description: 'Nexera Tech & Co - Expert data services, web development, and automation in Mississauga, GTA, Ontario.',
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratech.com'}/og-image.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratechnco.com'}/og-image.jpg`],
     creator: '@nexeratech',
   },
   robots: {
@@ -90,16 +90,16 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'LocalBusiness',
-              '@id': `${process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratech.com'}/#organization`,
+              '@id': `${process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratechnco.com'}/#organization`,
               name: 'Nexera Technology and Consultancy',
               alternateName: ['Nexera Tech & Co', 'Nexera Tech', 'Nexera Technology'],
               legalName: 'Nexera Technology and Consultancy',
               description: 'Leading provider of data services, web development services, and business automation solutions near Mississauga, GTA. Expert Excel automation, Power BI dashboards, Shopify stores, and workflow automation for small businesses.',
-              url: process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratech.com',
+              url: process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratechnco.com',
               telephone: process.env.NEXT_PUBLIC_BUSINESS_PHONE || '+1-647-XXX-XXXX',
-              email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL || 'info@nexeratech.com',
-              logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratech.com'}/logo.png`,
-              image: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratech.com'}/og-image.jpg`,
+              email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL || 'info@nexeratechnco.com',
+              logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratechnco.com'}/logo.png`,
+              image: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratechnco.com'}/og-image.jpg`,
               address: {
                 '@type': 'PostalAddress',
                 addressLocality: 'Mississauga',

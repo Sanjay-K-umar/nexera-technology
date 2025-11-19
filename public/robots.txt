@@ -34,4 +34,4 @@ Disallow: /api/
 Disallow: /_next/static/
 
 # Sitemap
-Sitemap: https://nexeratech.com/sitemap.xml
+Sitemap: https://nexeratechnco.com/sitemap.xml
