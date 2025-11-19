@@ -8,34 +8,34 @@ import { BarChart3, ShoppingCart, Zap, TrendingUp, DollarSign, Eye } from 'lucid
 const heroVariants = [
   {
     id: 'dashboard',
-    title: 'See Your Business in Real-Time',
-    subtitle: 'Try Our Interactive Dashboard',
-    description: 'This is what your business data could look like. Live insights, not spreadsheet chaos.',
-    bgImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    title: 'Transform Data Into Decisions',
+    subtitle: 'Power BI Dashboard Solutions',
+    description: 'Real-time business intelligence that turns complex data into clear, actionable insights.',
+    bgImage: 'linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)',
     demo: 'dashboard'
   },
   {
     id: 'shopify',
-    title: 'Your Store, Optimized for Sales',
-    subtitle: 'Interactive Store Preview',
-    description: 'See how a professional Shopify store converts visitors into customers.',
-    bgImage: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+    title: 'Enterprise-Grade eCommerce',
+    subtitle: 'Web Development Excellence',
+    description: 'High-performance web solutions built with cutting-edge technology and data-driven design.',
+    bgImage: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%)',
     demo: 'shopify'
   },
   {
     id: 'automation',
-    title: 'Watch Automation Save You Time',
-    subtitle: 'See It Working Live',
-    description: 'Tasks that take hours, done in seconds. This is what automation looks like.',
-    bgImage: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+    title: 'Intelligent Business Automation',
+    subtitle: 'Process Optimization',
+    description: 'Advanced automation systems that eliminate repetitive tasks and optimize workflows.',
+    bgImage: 'linear-gradient(135deg, #134e5e 0%, #71b280 100%)',
     demo: 'automation'
   },
   {
     id: 'seo',
-    title: 'Rank Higher, Get Found More',
-    subtitle: 'SEO Impact Visualizer',
-    description: 'Watch how SEO optimization brings more customers to your business.',
-    bgImage: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+    title: 'Data-Driven Digital Growth',
+    subtitle: 'Analytics & Optimization',
+    description: 'Strategic SEO and analytics solutions backed by comprehensive data analysis.',
+    bgImage: 'linear-gradient(135deg, #2b5876 0%, #4e4376 100%)',
     demo: 'seo'
   }
 ]
@@ -56,45 +56,45 @@ function DashboardDemo() {
 
   return (
     <div className="bg-white/95 backdrop-blur-sm rounded-lg md:rounded-xl lg:rounded-2xl p-3 sm:p-4 md:p-6 lg:p-8 shadow-2xl">
-      <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4 lg:mb-6 text-gray-800">Your Business Dashboard</h3>
+      <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4 lg:mb-6 text-gray-900">Business Intelligence Dashboard</h3>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
-        <div className="bg-gradient-to-br from-green-50 to-green-100 p-3 sm:p-4 md:p-5 lg:p-6 rounded-lg md:rounded-xl">
-          <div className="flex items-center gap-1.5 text-green-700 mb-1.5">
+        <div className="bg-gradient-to-br from-blue-600 to-blue-800 p-3 sm:p-4 md:p-5 lg:p-6 rounded-lg md:rounded-xl text-white">
+          <div className="flex items-center gap-1.5 mb-1.5 opacity-90">
             <DollarSign className="h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5" />
             <span className="text-[10px] sm:text-xs md:text-sm font-medium">Revenue</span>
           </div>
-          <div className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-bold text-green-900">${revenue.toLocaleString()}</div>
-          <div className="text-[10px] sm:text-xs text-green-600 mt-1 flex items-center gap-1">
+          <div className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-bold">${revenue.toLocaleString()}</div>
+          <div className="text-[10px] sm:text-xs mt-1 flex items-center gap-1 opacity-90">
             <TrendingUp className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
             +12%
           </div>
         </div>
-        <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-3 sm:p-4 md:p-5 lg:p-6 rounded-lg md:rounded-xl">
-          <div className="flex items-center gap-1.5 text-blue-700 mb-1.5">
+        <div className="bg-gradient-to-br from-teal-600 to-teal-800 p-3 sm:p-4 md:p-5 lg:p-6 rounded-lg md:rounded-xl text-white">
+          <div className="flex items-center gap-1.5 mb-1.5 opacity-90">
             <ShoppingCart className="h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5" />
             <span className="text-[10px] sm:text-xs md:text-sm font-medium">Orders</span>
           </div>
-          <div className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-bold text-blue-900">{orders}</div>
-          <div className="text-[10px] sm:text-xs text-blue-600 mt-1 flex items-center gap-1">
+          <div className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-bold">{orders}</div>
+          <div className="text-[10px] sm:text-xs mt-1 flex items-center gap-1 opacity-90">
             <TrendingUp className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
             +8%
           </div>
         </div>
-        <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-3 sm:p-4 md:p-5 lg:p-6 rounded-lg md:rounded-xl">
-          <div className="flex items-center gap-1.5 text-purple-700 mb-1.5">
+        <div className="bg-gradient-to-br from-indigo-600 to-indigo-800 p-3 sm:p-4 md:p-5 lg:p-6 rounded-lg md:rounded-xl text-white">
+          <div className="flex items-center gap-1.5 mb-1.5 opacity-90">
             <Eye className="h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5" />
             <span className="text-[10px] sm:text-xs md:text-sm font-medium">Visitors</span>
           </div>
-          <div className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-bold text-purple-900">{visitors}</div>
-          <div className="text-[10px] sm:text-xs text-purple-600 mt-1 flex items-center gap-1">
+          <div className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-bold">{visitors}</div>
+          <div className="text-[10px] sm:text-xs mt-1 flex items-center gap-1 opacity-90">
             <TrendingUp className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
             +24%
           </div>
         </div>
       </div>
-      <div className="mt-3 md:mt-4 lg:mt-6 p-2.5 sm:p-3 md:p-4 bg-blue-50 rounded-md md:rounded-lg border border-blue-200">
-        <p className="text-[10px] sm:text-xs md:text-sm text-blue-900">
-          <strong>✨ Live Updates:</strong> Real-time metrics for your business
+      <div className="mt-3 md:mt-4 lg:mt-6 p-2.5 sm:p-3 md:p-4 bg-slate-50 rounded-md md:rounded-lg border-2 border-blue-200">
+        <p className="text-[10px] sm:text-xs md:text-sm text-slate-800 font-medium">
+          <strong className="text-blue-900">✨ Live Updates:</strong> Real-time metrics for data-driven decisions
         </p>
       </div>
     </div>
@@ -281,7 +281,7 @@ export function HeroRotator() {
   }
 
   return (
-    <section className="relative min-h-[600px] sm:min-h-[700px] md:min-h-screen w-full overflow-hidden">
+    <section className="relative min-h-[600px] sm:min-h-[700px] md:min-h-screen w-full overflow-hidden pt-16 md:pt-0">
       {/* Animated Background */}
       <div 
         className="absolute inset-0 transition-all duration-1000"
