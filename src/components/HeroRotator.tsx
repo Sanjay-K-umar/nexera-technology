@@ -11,7 +11,17 @@ const heroVariants = [
     title: 'Transform Data Into Decisions',
     subtitle: 'Power BI Dashboard Solutions',
     description: 'Real-time business intelligence that turns complex data into clear, actionable insights.',
-    bgImage: 'linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)',
+    bgImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2000&q=80',
+    bgOverlay: 'linear-gradient(135deg, rgba(15, 32, 39, 0.85) 0%, rgba(32, 58, 67, 0.85) 50%, rgba(44, 83, 100, 0.85) 100%)',
+    demo: 'dashboard'
+  },
+  {
+    id: 'analytics',
+    title: 'Business Intelligence That Works',
+    subtitle: 'Data Analytics & Visualization',
+    description: 'Turn complex datasets into beautiful, actionable insights with advanced analytics.',
+    bgImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2000&q=80',
+    bgOverlay: 'linear-gradient(135deg, rgba(30, 60, 114, 0.85) 0%, rgba(42, 82, 152, 0.85) 50%, rgba(126, 34, 206, 0.85) 100%)',
     demo: 'dashboard'
   },
   {
@@ -19,7 +29,8 @@ const heroVariants = [
     title: 'Enterprise-Grade eCommerce',
     subtitle: 'Web Development Excellence',
     description: 'High-performance web solutions built with cutting-edge technology and data-driven design.',
-    bgImage: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%)',
+    bgImage: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=2000&q=80',
+    bgOverlay: 'linear-gradient(135deg, rgba(30, 60, 114, 0.85) 0%, rgba(42, 82, 152, 0.85) 50%, rgba(91, 33, 182, 0.85) 100%)',
     demo: 'shopify'
   },
   {
@@ -27,15 +38,26 @@ const heroVariants = [
     title: 'Intelligent Business Automation',
     subtitle: 'Process Optimization',
     description: 'Advanced automation systems that eliminate repetitive tasks and optimize workflows.',
-    bgImage: 'linear-gradient(135deg, #134e5e 0%, #71b280 100%)',
+    bgImage: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=2000&q=80',
+    bgOverlay: 'linear-gradient(135deg, rgba(19, 78, 94, 0.85) 0%, rgba(113, 178, 128, 0.85) 100%)',
+    demo: 'automation'
+  },
+  {
+    id: 'code',
+    title: 'Custom Software Solutions',
+    subtitle: 'Development & Integration',
+    description: 'Tailored software solutions built to solve your unique business challenges.',
+    bgImage: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=2000&q=80',
+    bgOverlay: 'linear-gradient(135deg, rgba(17, 24, 39, 0.85) 0%, rgba(31, 41, 55, 0.85) 50%, rgba(55, 65, 81, 0.85) 100%)',
     demo: 'automation'
   },
   {
     id: 'seo',
     title: 'Data-Driven Digital Growth',
-    subtitle: 'Analytics & Optimization',
+    subtitle: 'Analytics & SEO',
     description: 'Strategic SEO and analytics solutions backed by comprehensive data analysis.',
-    bgImage: 'linear-gradient(135deg, #2b5876 0%, #4e4376 100%)',
+    bgImage: 'https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?auto=format&fit=crop&w=2000&q=80',
+    bgOverlay: 'linear-gradient(135deg, rgba(43, 88, 118, 0.85) 0%, rgba(78, 67, 118, 0.85) 100%)',
     demo: 'seo'
   }
 ]
@@ -257,12 +279,26 @@ function SEODemo() {
 
 export function HeroRotator() {
   const [currentVariant, setCurrentVariant] = useState(heroVariants[0])
+  const [currentIndex, setCurrentIndex] = useState(0)
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
     // Select random variant only on client side to avoid hydration mismatch
-    setCurrentVariant(heroVariants[Math.floor(Math.random() * heroVariants.length)])
+    const randomIndex = Math.floor(Math.random() * heroVariants.length)
+    setCurrentIndex(randomIndex)
+    setCurrentVariant(heroVariants[randomIndex])
     setIsClient(true)
+
+    // Auto-rotate every 5 seconds
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => {
+        const nextIndex = (prevIndex + 1) % heroVariants.length
+        setCurrentVariant(heroVariants[nextIndex])
+        return nextIndex
+      })
+    }, 5000)
+
+    return () => clearInterval(interval)
   }, [])
 
   const renderDemo = () => {
@@ -282,11 +318,37 @@ export function HeroRotator() {
 
   return (
     <section className="relative min-h-[600px] sm:min-h-[700px] md:min-h-screen w-full overflow-hidden pt-16 md:pt-0">
-      {/* Animated Background */}
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 transition-all duration-1000 bg-cover bg-center"
+        style={{ 
+          backgroundImage: `url(${currentVariant.bgImage})`,
+        }}
+      />
+      {/* Gradient Overlay */}
       <div 
         className="absolute inset-0 transition-all duration-1000"
-        style={{ background: currentVariant.bgImage }}
+        style={{ background: currentVariant.bgOverlay }}
       />
+      
+      {/* Slideshow Indicators */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
+        {heroVariants.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => {
+              setCurrentIndex(index)
+              setCurrentVariant(heroVariants[index])
+            }}
+            className={`h-2 rounded-full transition-all duration-300 ${
+              index === currentIndex 
+                ? 'bg-white w-8' 
+                : 'bg-white/50 w-2 hover:bg-white/75'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
       
       <div className="relative z-10 min-h-[600px] sm:min-h-[700px] md:min-h-screen flex items-center py-8 sm:py-12 md:py-20">
         <div className="container mx-auto px-4">
