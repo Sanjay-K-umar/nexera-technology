@@ -47,7 +47,16 @@ export function Footer() {
                 className="text-primary-foreground/80 hover:text-white transition-colors"
                 aria-label="Google Business Profile"
               >
-                <MapPin size={20} />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <path d="M21.35,11.1H12v3.8h5.6c-0.5,2.6-2.8,4.5-5.6,4.5c-3.3,0-6-2.7-6-6c0-3.3,2.7-6,6-6c1.5,0,2.8,0.5,3.8,1.5l2.8-2.8C16.9,4.4,14.6,3.5,12,3.5c-4.7,0-8.5,3.8-8.5,8.5s3.8,8.5,8.5,8.5c4.9,0,8.5-3.5,8.5-8.5C20.5,11.6,20.5,11.3,20.5,11.1z" />
+                </svg>
               </a>
             </div>
           </div>
