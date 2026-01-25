@@ -74,7 +74,10 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    google: 'viIsy3FzbgJU6KgQDT_fJUuqEG5mv7oNokJXQ6Be49I',
+  },
+  other: {
+    'msvalidate.01': '7A894259F3BE456A2687D8CCC26ED5E5',
   },
 }
 

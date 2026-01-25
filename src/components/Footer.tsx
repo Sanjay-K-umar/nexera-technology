@@ -23,7 +23,7 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.facebook.com/people/Nexera-Technology-and-Consultancy/61582576697546/"
+                href="https://www.facebook.com/Nexeratechnco"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-foreground/80 hover:text-white transition-colors"
