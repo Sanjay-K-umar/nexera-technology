@@ -89,6 +89,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <meta name="msvalidate.01" content="7A894259F3BE456A2687D8CCC26ED5E5" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
