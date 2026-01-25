@@ -40,6 +40,15 @@ export function Footer() {
               >
                 <Instagram size={20} />
               </a>
+              <a
+                href="https://share.google/bgihHXBaHUKsW00mu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-foreground/80 hover:text-white transition-colors"
+                aria-label="Google Business Profile"
+              >
+                <MapPin size={20} />
+              </a>
             </div>
           </div>
 
