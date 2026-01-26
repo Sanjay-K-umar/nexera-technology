@@ -153,6 +153,14 @@ export function Footer() {
                 </a>
               </li>
             </ul>
+            <div className="mt-6">
+              <a 
+                href="/contact" 
+                className="inline-block bg-white text-primary px-4 py-2 rounded-lg text-sm font-bold hover:bg-gray-100 transition-colors"
+              >
+                🚀 Get Free Quote
+              </a>
+            </div>
           </div>
         </div>
 

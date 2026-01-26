@@ -365,17 +365,18 @@ export function HeroRotator() {
                 {currentVariant.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-2 md:gap-4">
-                <Button asChild size="lg" className="text-sm md:text-base px-5 md:px-8 py-4 md:py-6 bg-white text-gray-900 hover:bg-gray-100 w-full sm:w-auto">
+                <Button asChild size="lg" className="text-sm md:text-base px-5 md:px-8 py-4 md:py-6 bg-white text-gray-900 hover:bg-gray-100 w-full sm:w-auto font-bold shadow-lg">
                   <Link href="/contact">
-                    Get Started Free
+                    🚀 Get Your Free Quote Today
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-sm md:text-base px-5 md:px-8 py-4 md:py-6 bg-white/10 text-white border-2 border-white hover:bg-white hover:text-gray-900 w-full sm:w-auto">
                   <Link href="/services">
-                    Explore Services
+                    See How We Help →
                   </Link>
                 </Button>
               </div>
+              <p className="text-white/80 text-xs md:text-sm mt-4">✅ No commitment required • Response within 24 hours</p>
             </div>
 
             {/* Right side - Interactive Demo */}

@@ -69,19 +69,21 @@ export default function ContactPage() {
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Let&apos;s Talk About Your Business
+            <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">✅ Free Quote • No Commitment • 24hr Response</div>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              Get Your Free Quote in 24 Hours
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Book your free 15-minute consultation. No pressure, no sales pitch—just an honest conversation about how we can help.
+              Tell us what you need and we&apos;ll send you a clear, honest quote. No sales pressure—just real solutions for your business.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8">
-              <h2 className="text-2xl font-bold mb-6">
-                Send Us a Message
+            <Card className="p-8 border-2 border-blue-100 shadow-lg">
+              <h2 className="text-2xl font-bold mb-2">
+                Request Your Free Quote
               </h2>
+              <p className="text-gray-600 mb-6 text-sm">Fill out this quick form and get a personalized quote for your project.</p>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <Label htmlFor="name">Name *</Label>
@@ -131,16 +133,17 @@ export default function ContactPage() {
                   />
                 </div>
 
-                <Button type="submit" className="w-full" disabled={isSubmitting}>
+                <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-6 text-lg" disabled={isSubmitting}>
                   {isSubmitting ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Sending...
+                      Sending Your Request...
                     </>
                   ) : (
-                    "Send Message"
+                    "🚀 Get My Free Quote Now"
                   )}
                 </Button>
+                <p className="text-center text-gray-500 text-sm mt-3">We respond to every message within 24 hours</p>
               </form>
             </Card>
 

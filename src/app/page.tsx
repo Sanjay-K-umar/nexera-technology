@@ -56,25 +56,29 @@ export default function Home() {
       </section>
 
       {/* Personal Consultant Touch Section */}
-      <section className="py-16 bg-white border-b">
+      <section className="py-16 bg-gradient-to-b from-white to-blue-50 border-b">
         <div className="container mx-auto px-4 text-center max-w-3xl">
-          <h2 className="text-3xl font-bold mb-6">Expert Service, Personal Touch</h2>
+          <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">🎯 Personal Service, Not Agency Runaround</div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Work Directly With an Expert Who Gets Results</h2>
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            When you hire Nexera, you&apos;re not just another ticket in an agency queue. You work directly with an expert consultant dedicated to understanding <strong>your</strong> business challenges.
+          </p>
           <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-            When you hire Nexera, you&apos;re not just another ticket in an agency queue. You work directly with an expert consultant dedicated to understanding your business.
-            Whether you need a custom <strong>Power BI dashboard</strong>, complex <strong>Excel automation</strong>, or a high-converting <strong>Shopify store</strong>, I provide solutions that pay for themselves.
+            Whether you need a custom <strong>Power BI dashboard</strong> to finally see your numbers clearly, <strong>Excel automation</strong> to stop wasting hours on manual work, or a <strong>Shopify store</strong> that actually converts visitors into customers—I deliver solutions that <strong>pay for themselves</strong>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="rounded-full">
+            <Button asChild size="lg" className="rounded-full bg-green-600 hover:bg-green-700 text-white font-bold shadow-lg">
               <Link href="/contact">
-                Hire Your Consultant <ArrowRight className="ml-2 h-4 w-4" />
+                🚀 Get Your Free Quote <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full">
               <Link href="/services">
-                View Consulting Services
+                See What I Can Do For You
               </Link>
             </Button>
           </div>
+          <p className="text-gray-500 text-sm mt-4">⏱️ Most quotes delivered within 24 hours</p>
         </div>
       </section>
 
@@ -179,13 +183,17 @@ export default function Home() {
 
             <div className="mt-12 text-center">
               <p className="text-xl mb-6">
-                You're not alone. These are the exact problems we solve for small businesses every day.
+                You&apos;re not alone. <strong>These are the exact problems we solve for small businesses every single day.</strong>
               </p>
-              <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">
+              <p className="text-lg mb-8 text-blue-200">
+                💡 The best part? Most of our clients see results within the first week.
+              </p>
+              <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6 font-bold shadow-lg">
                 <Link href="/contact">
-                  Let's Fix This Together <ArrowRight className="ml-2" />
+                  Yes, I Want to Fix This → <ArrowRight className="ml-2" />
                 </Link>
               </Button>
+              <p className="text-blue-200 text-sm mt-4">Free consultation • No commitment • Real solutions</p>
             </div>
           </div>
         </div>
@@ -221,17 +229,20 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Stop Losing Customers?
+            Your Competitors Are Already Online.<br/>Are You Ready to Catch Up?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Book a free consultation and discover how we can help your business 
-            get online, look professional, and start growing today.
+          <p className="text-xl mb-4 max-w-2xl mx-auto">
+            Every day you wait is another day customers go to your competition.
           </p>
-          <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">
+          <p className="text-lg mb-8 max-w-2xl mx-auto text-blue-200">
+            Book a free, no-pressure consultation and let&apos;s build a plan to get your business growing.
+          </p>
+          <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6 font-bold shadow-lg animate-pulse">
             <Link href="/contact">
-              Book Your Free Consultation <ArrowRight className="ml-2" />
+              🚀 Get My Free Quote Now <ArrowRight className="ml-2" />
             </Link>
           </Button>
+          <p className="text-blue-200 text-sm mt-4">📞 Response within 24 hours • No sales pressure • Real solutions</p>
         </div>
       </section>
     </>

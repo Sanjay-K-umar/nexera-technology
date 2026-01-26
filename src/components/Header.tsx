@@ -44,8 +44,8 @@ export function Header() {
             <Link href="/contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </Link>
-            <Button asChild size="sm">
-              <Link href="/contact">Book Free Consultation</Link>
+            <Button asChild size="sm" className="bg-green-600 hover:bg-green-700 text-white font-semibold animate-pulse">
+              <Link href="/contact">📞 Get Free Quote</Link>
             </Button>
           </div>
 
@@ -103,9 +103,9 @@ export function Header() {
             >
               Contact
             </Link>
-            <Button asChild size="sm" className="w-full">
+            <Button asChild size="sm" className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold">
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                Book Free Consultation
+                📞 Get Your Free Quote Now
               </Link>
             </Button>
           </div>

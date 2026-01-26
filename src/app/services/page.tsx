@@ -5,15 +5,12 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { Database, Globe, Zap, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Services | Nexera Technology - Data Services Near Me, Web Development Services & Automation | Mississauga",
-  description: "Nexera Technology services: data services near me (Power BI, Excel automation, analytics), web development services near me (Shopify, custom websites), business automation near me (workflow optimization, process automation). Serving Mississauga, Brampton, Toronto, GTA, Ontario. Free consultation!",
+  title: "Hire Business Technology Consultant Ontario | Power BI, Excel, Shopify Services",
+  description: "Looking to hire a technology consultant in Ontario? Get affordable Power BI dashboards, Excel automation, and Shopify development. Personal service for small businesses in Mississauga, GTA. Free quote in 24 hours!",
   keywords: [
-    'Nexera services', 'Nexera Technology services',
-    'data services near me', 'web development services near me', 'automation services near me',
-    'Power BI services Mississauga', 'Excel automation services GTA', 'dashboard development',
-    'Shopify development services', 'ecommerce services near me', 'website development GTA',
-    'business automation services', 'workflow automation Ontario', 'IT services Mississauga',
-    'data analytics services', 'web design services', 'technology services near me'
+    'hire technology consultant Ontario', 'small business tech services Mississauga',
+    'Power BI consultant GTA', 'Excel automation services Ontario', 'Shopify expert Mississauga',
+    'affordable business automation', 'hire data analyst', 'web developer for small business'
   ],
   alternates: {
     canonical: "/services",
@@ -90,14 +87,17 @@ export default function ServicesPage() {
 
         <div className="text-center bg-gradient-to-br from-primary to-blue-900 text-white rounded-2xl p-12">
           <h2 className="text-3xl font-bold mb-4">
-            Not Sure Which Service You Need?
+            Not Sure Where to Start? Let&apos;s Figure It Out Together.
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
-            Book a free consultation and we&apos;ll help you identify the right solution.
+          <p className="text-xl mb-4 text-blue-100">
+            Get a free, no-pressure consultation and we&apos;ll recommend exactly what your business needs.
           </p>
-          <Button asChild size="lg" variant="secondary">
+          <p className="text-lg mb-8 text-blue-200">
+            💡 Most clients save 10+ hours per week after working with us.
+          </p>
+          <Button asChild size="lg" variant="secondary" className="font-bold shadow-lg">
             <Link href="/contact">
-              Book Your Free Consultation <ArrowRight className="ml-2 h-5 w-5" />
+              🚀 Get My Free Quote <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
         </div>
