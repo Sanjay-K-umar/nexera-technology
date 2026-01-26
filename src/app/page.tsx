@@ -7,18 +7,12 @@ import { BeforeAfter } from '@/components/BeforeAfter'
 import { ServiceCard } from '@/components/ServiceCard'
 
 export const metadata: Metadata = {
-  title: 'Nexera Technology | Data Services Near Me, Web Development Services & Automation | Mississauga, GTA',
-  description: 'Nexera Technology and Consultancy (Nexera Tech & Co) - #1 data services near me, web development services near me, and business automation near me. Expert Excel automation, Power BI dashboards, Shopify stores, and workflow automation in Mississauga, Brampton, Toronto, GTA, Ontario. Free consultation - Call now!',
+  title: 'Hire Tech Consultant Ontario | Power BI, Excel & Web Development Services',
+  description: 'Looking for a technology consultant in Mississauga or GTA? Hire an expert for Power BI dashboards, Excel automation, and custom web development. Personal service, affordable rates, and real ROI for small businesses.',
   keywords: [
-    'Nexera', 'Nexera Technology', 'Nexera Tech', 'Nexera Tech and Co', 'Nexera Tech n Co',
-    'data services near me', 'web development services near me', 'business automation near me',
-    'data analytics near me', 'web developer near me', 'IT services near me',
-    'small business technology Mississauga', 'business automation GTA', 'get business online',
-    'Excel automation consultant', 'Excel services near me', 'spreadsheet automation',
-    'Power BI expert Ontario', 'Power BI consultant near me', 'dashboard services',
-    'Shopify developer Canada', 'Shopify expert near me', 'ecommerce development GTA',
-    'technology consultant Mississauga', 'IT consultant near me', 'digital services GTA',
-    'Mississauga data services', 'Brampton web development', 'Toronto automation services'
+    'hire technology consultant Ontario', 'small business tech consultant Mississauga', 'data analytics consultant',
+    'Excel automation expert', 'Power BI developer near me', 'Shopify expert Ontario',
+    'business process automation consultant', 'affordable IT consulting GTA'
   ],
   alternates: {
     canonical: '/',
@@ -55,8 +49,31 @@ export default function Home() {
             </div>
             <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               <div className="text-4xl font-bold text-primary mb-2">24/7</div>
-              <div className="text-gray-600">Support Available</div>
+              <div className="text-gray-600">Personal Support</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Personal Consultant Touch Section */}
+      <section className="py-16 bg-white border-b">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <h2 className="text-3xl font-bold mb-6">Expert Service, Personal Touch</h2>
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            When you hire Nexera, you&apos;re not just another ticket in an agency queue. You work directly with an expert consultant dedicated to understanding your business.
+            Whether you need a custom <strong>Power BI dashboard</strong>, complex <strong>Excel automation</strong>, or a high-converting <strong>Shopify store</strong>, I provide solutions that pay for themselves.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="rounded-full">
+              <Link href="/contact">
+                Hire Your Consultant <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="rounded-full">
+              <Link href="/services">
+                View Consulting Services
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

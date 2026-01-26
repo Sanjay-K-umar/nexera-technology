@@ -17,18 +17,15 @@ export const metadata: Metadata = {
   },
   description: 'Nexera Technology and Consultancy (Nexera Tech & Co) - Leading data services, web development services, and business automation near you. Excel automation, Power BI dashboards, Shopify stores, and workflow automation in Mississauga, Brampton, Toronto, GTA, and across Ontario, Canada. Call now for free consultation!',
   keywords: [
-    'Nexera', 'Nexera Technology', 'Nexera Tech', 'Nexera Tech and Co', 'Nexera Tech n Co',
-    'data services near me', 'web development services near me', 'business automation near me',
-    'data analytics near me Mississauga', 'web developer near me GTA', 'IT services Mississauga',
-    'small business technology Mississauga', 'Excel automation GTA', 'Excel consultant near me',
-    'Power BI consultant Ontario', 'Power BI services near me', 'data visualization Mississauga',
-    'Shopify developer Mississauga', 'Shopify expert near me', 'ecommerce developer GTA',
-    'business automation Canada', 'workflow automation Ontario', 'process automation near me',
-    'web development GTA', 'website developer Mississauga', 'web design services near me',
-    'data analytics small business', 'business intelligence Mississauga', 'dashboard development',
-    'technology consultant near me', 'IT consultant Mississauga', 'digital transformation GTA',
-    'Mississauga tech company', 'Brampton IT services', 'Toronto data services',
-    'Ontario web development', 'Canada business automation', 'GTA technology services'
+    'Nexera', 'Nexera Technology', 'Nexera Tech',
+    // High-Intent Power BI
+    'hire Power BI consultant Ontario', 'Power BI dashboard services Mississauga', 'Power BI developer for small business Ontario', 'Power BI consulting services GTA', 'Power BI price Ontario', 'Power BI expert near me',
+    // High-Intent Excel
+    'Excel automation services Ontario', 'Excel automation consultant GTA', 'VBA macros services Mississauga', 'business process automation Excel Ontario', 'hire Excel expert near me', 'automate Excel workflows',
+    // High-Intent Web & Shopify
+    'hire web developer Mississauga', 'Shopify expert Mississauga', 'Shopify store development Ontario', 'custom web development services Ontario', 'small business web design services',
+    // Consultant & ROI
+    'business analytics consultant Ontario', 'small business technology consultant Mississauga', 'affordable BI consulting', 'data analytics consultant GTA'
   ],
   authors: [{ name: 'Nexera Technology and Consultancy' }],
   creator: 'Nexera Technology and Consultancy',

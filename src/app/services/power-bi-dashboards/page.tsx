@@ -5,16 +5,12 @@ import { Card } from '@/components/ui/card'
 import { ArrowRight, BarChart3, TrendingUp, Clock, Target, CheckCircle, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Power BI Services Near Me | Nexera Technology - Custom Dashboards Mississauga, GTA',
-  description: 'Nexera Technology: #1 Power BI services near me. Expert Power BI consultant in Mississauga, GTA. Custom Power BI dashboards, data visualization, business intelligence. Stop drowning in spreadsheets. Free consultation! Serving Mississauga, Brampton, Toronto, Ontario.',
+  title: "Power BI Dashboard Services Mississauga | Hire Power BI Consultant Ontario",
+  description: "Need a Power BI expert in the GTA? Hire Nexera for custom Power BI dashboard services in Mississauga & Ontario. Affordable consulting for small business reporting & analytics. Get a free quote today.",
   keywords: [
-    'Nexera Power BI', 'Nexera data services',
-    'Power BI services near me', 'Power BI consultant near me', 'Power BI expert Mississauga',
-    'Power BI dashboard GTA', 'Power BI consultant Mississauga', 'business intelligence Ontario',
-    'data visualization Canada', 'Power BI small business', 'custom dashboards Toronto',
-    'Power BI developer near me', 'dashboard services Mississauga', 'data analytics near me',
-    'business dashboard services', 'Power BI reporting', 'data visualization services',
-    'BI consultant GTA', 'Power BI implementation', 'dashboard development Mississauga'
+    'hire Power BI consultant Ontario', 'Power BI dashboard services Mississauga', 'Power BI developer for small business',
+    'Power BI consulting services GTA', 'Power BI expert near me', 'custom Power BI solutions Ontario',
+    'Power BI report development cost', 'small business BI consultant', 'data analytics services Mississauga'
   ],
   alternates: {
     canonical: '/services/power-bi-dashboards',

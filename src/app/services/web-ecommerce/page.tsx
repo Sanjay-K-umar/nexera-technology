@@ -15,16 +15,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Web Development Services Near Me | Nexera Technology - Shopify Expert Mississauga, GTA",
-  description: "Nexera Technology: #1 web development services near me. Expert Shopify developer in Mississauga, GTA. Custom websites, Shopify stores, eCommerce solutions. Professional web design & development. Free consultation! Serving Mississauga, Brampton, Toronto, Ontario.",
+  title: "Hire Web Developer Mississauga | Shopify Expert & Store Development Ontario",
+  description: "Looking to hire a web developer in Mississauga? We provide custom Shopify store development and small business web design in Ontario. Get a professional, affordable eCommerce website today. Free consultation.",
   keywords: [
-    'Nexera web development', 'Nexera Shopify',
-    'web development services near me', 'web developer near me', 'website developer Mississauga',
-    'Shopify developer near me', 'Shopify expert Mississauga', 'Shopify services GTA',
-    'ecommerce developer near me', 'ecommerce services Mississauga', 'online store development',
-    'custom website development', 'web design services near me', 'website design Mississauga',
-    'Shopify store setup', 'ecommerce website development', 'web development GTA',
-    'website services Ontario', 'Shopify consultant near me', 'web design GTA'
+    'hire web developer Mississauga', 'Shopify expert Mississauga', 'Shopify store development Ontario',
+    'custom web development services GTA', 'small business web design Ontario', 'eCommerce website experts near me',
+    'Shopify development pricing', 'website designer Mississauga', 'get business online Ontario'
   ],
   alternates: {
     canonical: "/services/web-ecommerce",
