@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { BarChart3, ShoppingCart, Zap, TrendingUp, DollarSign, Eye } from 'lucide-react'
+import { BarChart3, ShoppingCart, Zap, TrendingUp, DollarSign, Eye, ArrowRight, CheckCircle2, PlayCircle, Loader2 } from 'lucide-react'
 
 const heroVariants = [
   {
@@ -116,7 +116,9 @@ function DashboardDemo() {
       </div>
       <div className="mt-3 md:mt-4 lg:mt-6 p-2.5 sm:p-3 md:p-4 bg-slate-50 rounded-md md:rounded-lg border-2 border-blue-200">
         <p className="text-[10px] sm:text-xs md:text-sm text-slate-800 font-medium">
-          <strong className="text-blue-900">✨ Live Updates:</strong> Real-time metrics for data-driven decisions
+          <strong className="text-blue-900 flex items-center gap-2">
+            <Zap size={14} className="text-blue-600" /> Live Updates:
+          </strong> Real-time metrics for data-driven decisions
         </p>
       </div>
     </div>
@@ -151,14 +153,14 @@ function ShopifyDemo() {
         </div>
         {cartCount > 0 && (
           <div className="p-3 md:p-4 bg-green-50 border-2 border-green-200 rounded-xl animate-fade-in-up">
-            <p className="text-green-900 font-semibold text-sm md:text-base">
-              ✅ {cartCount} item{cartCount > 1 ? 's' : ''} in cart - This is how easy checkout should be!
+            <p className="text-green-900 font-semibold text-sm md:text-base flex items-center gap-2">
+              <CheckCircle2 size={16} /> {cartCount} item{cartCount > 1 ? 's' : ''} in cart - This is how easy checkout should be!
             </p>
           </div>
         )}
         <div className="p-3 md:p-4 bg-blue-50 rounded-lg border border-blue-200">
-          <p className="text-xs md:text-sm text-blue-900">
-            <strong>⚡ Fast, Beautiful, Converting:</strong> Your Shopify store built for sales, not just looks.
+          <p className="text-xs md:text-sm text-blue-900 flex items-center gap-2">
+            <strong><Zap size={14} className="inline" /> Fast, Beautiful, Converting:</strong> Your Shopify store built for sales, not just looks.
           </p>
         </div>
       </div>
@@ -202,8 +204,8 @@ function AutomationDemo() {
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
               <span className="font-medium text-sm md:text-base">{task.name}</span>
               <div className="flex items-center gap-3">
-                <span className={`text-xs md:text-sm ${task.status === 'completed' ? 'text-green-600 line-through' : 'text-gray-500'}`}>
-                  {task.status === 'pending' ? task.time : '✅ 3 seconds'}
+                <span className={`text-xs md:text-sm flex items-center gap-1 ${task.status === 'completed' ? 'text-green-600 line-through' : 'text-gray-500'}`}>
+                  {task.status === 'pending' ? task.time : <><CheckCircle2 size={14} /> Done</>}
                 </span>
               </div>
             </div>
@@ -215,11 +217,15 @@ function AutomationDemo() {
         disabled={isAutomating}
         className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-base md:text-lg py-5 md:py-6"
       >
-        {isAutomating ? '⚡ Automating...' : '▶ Watch Automation Save 3+ Hours'}
+        {isAutomating ? (
+          <><Loader2 className="mr-2 h-5 w-5 animate-spin" /> Automating...</>
+        ) : (
+          <><PlayCircle className="mr-2 h-5 w-5" /> Watch Automation Save 3+ Hours</>
+        )}
       </Button>
       <div className="mt-3 md:mt-4 p-3 md:p-4 bg-blue-50 rounded-lg border border-blue-200">
-        <p className="text-xs md:text-sm text-blue-900">
-          <strong>💡 Time Saved:</strong> What takes hours manually, happens in seconds with automation.
+        <p className="text-xs md:text-sm text-blue-900 flex items-center gap-2">
+          <strong><Zap size={14} /> Time Saved:</strong> What takes hours manually, happens in seconds with automation.
         </p>
       </div>
     </div>
@@ -252,7 +258,7 @@ function SEODemo() {
           <div className="p-4 md:p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl">
             <p className="text-xs md:text-sm text-orange-700 mb-2">Google Ranking</p>
             <p className="text-3xl md:text-4xl font-bold text-orange-900">#{ranking}</p>
-            {ranking <= 10 && <p className="text-xs text-green-600 mt-1">🎉 First Page!</p>}
+            {ranking <= 10 && <p className="text-xs text-green-600 mt-1 flex items-center gap-1"><CheckCircle2 size={12} /> First Page!</p>}
           </div>
           <div className="p-4 md:p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
             <p className="text-xs md:text-sm text-green-700 mb-2">Monthly Visitors</p>
@@ -265,11 +271,15 @@ function SEODemo() {
           disabled={isOptimizing}
           className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-base md:text-lg py-5 md:py-6"
         >
-          {isOptimizing ? '🚀 Optimizing...' : '▶ Watch SEO Boost Your Traffic'}
+          {isOptimizing ? (
+            <><Loader2 className="mr-2 h-5 w-5 animate-spin" /> Optimizing...</>
+          ) : (
+            <><PlayCircle className="mr-2 h-5 w-5" /> Watch SEO Boost Your Traffic</>
+          )}
         </Button>
         <div className="p-3 md:p-4 bg-green-50 rounded-lg border border-green-200">
-          <p className="text-xs md:text-sm text-green-900">
-            <strong>📈 The Result:</strong> Higher rankings = More customers finding YOU instead of your competitors.
+          <p className="text-xs md:text-sm text-green-900 flex items-center gap-2">
+            <strong><TrendingUp size={14} /> The Result:</strong> Higher rankings = More customers finding YOU instead of your competitors.
           </p>
         </div>
       </div>
@@ -366,17 +376,19 @@ export function HeroRotator() {
               </p>
               <div className="flex flex-col sm:flex-row gap-2 md:gap-4">
                 <Button asChild size="lg" className="text-sm md:text-base px-5 md:px-8 py-4 md:py-6 bg-white text-gray-900 hover:bg-gray-100 w-full sm:w-auto font-bold shadow-lg">
-                  <Link href="/contact">
-                    🚀 Get Your Free Quote Today
+                  <Link href="/contact" className="flex items-center gap-2">
+                    Get Your Free Quote Today <ArrowRight size={18} />
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-sm md:text-base px-5 md:px-8 py-4 md:py-6 bg-white/10 text-white border-2 border-white hover:bg-white hover:text-gray-900 w-full sm:w-auto">
-                  <Link href="/services">
-                    See How We Help →
+                  <Link href="/services" className="flex items-center gap-2">
+                    See How We Help <ArrowRight size={18} />
                   </Link>
                 </Button>
               </div>
-              <p className="text-white/80 text-xs md:text-sm mt-4">✅ No commitment required • Response within 24 hours</p>
+              <p className="text-white/80 text-xs md:text-sm mt-4 flex items-center gap-2">
+                <CheckCircle2 size={16} /> No commitment required • Response within 24 hours
+              </p>
             </div>
 
             {/* Right side - Interactive Demo */}

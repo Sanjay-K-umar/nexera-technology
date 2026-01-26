@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Phone } from 'lucide-react'
 import { Button } from './ui/button'
 
 export function Header() {
@@ -45,7 +45,10 @@ export function Header() {
               Contact
             </Link>
             <Button asChild size="sm" className="bg-green-600 hover:bg-green-700 text-white font-semibold animate-pulse">
-              <Link href="/contact">📞 Get Free Quote</Link>
+              <Link href="/contact" className="flex items-center gap-2">
+                <Phone size={16} />
+                <span>Get Free Quote</span>
+              </Link>
             </Button>
           </div>
 

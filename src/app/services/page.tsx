@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ServiceCard } from "@/components/ServiceCard";
-import { Database, Globe, Zap, ArrowRight } from "lucide-react";
+import { Database, Globe, Zap, ArrowRight, Lightbulb, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Hire Business Technology Consultant Ontario | Power BI, Excel, Shopify Services",
@@ -92,12 +92,12 @@ export default function ServicesPage() {
           <p className="text-xl mb-4 text-blue-100">
             Get a free, no-pressure consultation and we&apos;ll recommend exactly what your business needs.
           </p>
-          <p className="text-lg mb-8 text-blue-200">
-            💡 Most clients save 10+ hours per week after working with us.
+          <p className="text-lg mb-8 text-blue-200 flex items-center justify-center gap-2">
+            <Lightbulb size={20} /> Most clients save 10+ hours per week after working with us.
           </p>
           <Button asChild size="lg" variant="secondary" className="font-bold shadow-lg">
-            <Link href="/contact">
-              🚀 Get My Free Quote <ArrowRight className="ml-2 h-5 w-5" />
+            <Link href="/contact" className="flex items-center">
+              Get My Free Quote <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
         </div>

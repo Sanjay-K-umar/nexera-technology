@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, BarChart3, ShoppingCart, Zap, CheckCircle } from 'lucide-react'
+import { ArrowRight, BarChart3, ShoppingCart, Zap, CheckCircle, Clock, Lightbulb } from 'lucide-react'
 import { HeroRotator } from '@/components/HeroRotator'
 import { BeforeAfter } from '@/components/BeforeAfter'
 import { ServiceCard } from '@/components/ServiceCard'
@@ -58,7 +58,9 @@ export default function Home() {
       {/* Personal Consultant Touch Section */}
       <section className="py-16 bg-gradient-to-b from-white to-blue-50 border-b">
         <div className="container mx-auto px-4 text-center max-w-3xl">
-          <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">🎯 Personal Service, Not Agency Runaround</div>
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            <CheckCircle size={16} /> Personal Service, Not Agency Runaround
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Work Directly With an Expert Who Gets Results</h2>
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
             When you hire Nexera, you&apos;re not just another ticket in an agency queue. You work directly with an expert consultant dedicated to understanding <strong>your</strong> business challenges.
@@ -68,8 +70,8 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="rounded-full bg-green-600 hover:bg-green-700 text-white font-bold shadow-lg">
-              <Link href="/contact">
-                🚀 Get Your Free Quote <ArrowRight className="ml-2 h-4 w-4" />
+              <Link href="/contact" className="flex items-center">
+                Get Your Free Quote <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full">
@@ -78,7 +80,9 @@ export default function Home() {
               </Link>
             </Button>
           </div>
-          <p className="text-gray-500 text-sm mt-4">⏱️ Most quotes delivered within 24 hours</p>
+          <p className="text-gray-500 text-sm mt-4 flex items-center justify-center gap-2">
+            <Clock size={16} /> Most quotes delivered within 24 hours
+          </p>
         </div>
       </section>
 
@@ -185,12 +189,12 @@ export default function Home() {
               <p className="text-xl mb-6">
                 You&apos;re not alone. <strong>These are the exact problems we solve for small businesses every single day.</strong>
               </p>
-              <p className="text-lg mb-8 text-blue-200">
-                💡 The best part? Most of our clients see results within the first week.
+              <p className="text-lg mb-8 text-blue-200 flex items-center justify-center gap-2">
+                <Lightbulb size={20} /> The best part? Most of our clients see results within the first week.
               </p>
               <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6 font-bold shadow-lg">
-                <Link href="/contact">
-                  Yes, I Want to Fix This → <ArrowRight className="ml-2" />
+                <Link href="/contact" className="flex items-center">
+                  Yes, I Want to Fix This <ArrowRight className="ml-2" />
                 </Link>
               </Button>
               <p className="text-blue-200 text-sm mt-4">Free consultation • No commitment • Real solutions</p>
@@ -238,11 +242,13 @@ export default function Home() {
             Book a free, no-pressure consultation and let&apos;s build a plan to get your business growing.
           </p>
           <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6 font-bold shadow-lg animate-pulse">
-            <Link href="/contact">
-              🚀 Get My Free Quote Now <ArrowRight className="ml-2" />
+            <Link href="/contact" className="flex items-center">
+              Get My Free Quote Now <ArrowRight className="ml-2" />
             </Link>
           </Button>
-          <p className="text-blue-200 text-sm mt-4">📞 Response within 24 hours • No sales pressure • Real solutions</p>
+          <p className="text-blue-200 text-sm mt-4 flex items-center justify-center gap-2">
+            <Clock size={16} /> Response within 24 hours • No sales pressure • Real solutions
+          </p>
         </div>
       </section>
     </>

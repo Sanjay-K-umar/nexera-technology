@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react'
+import { Facebook, Instagram, Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -156,9 +156,9 @@ export function Footer() {
             <div className="mt-6">
               <a 
                 href="/contact" 
-                className="inline-block bg-white text-primary px-4 py-2 rounded-lg text-sm font-bold hover:bg-gray-100 transition-colors"
+                className="inline-flex items-center gap-2 bg-white text-primary px-4 py-2 rounded-lg text-sm font-bold hover:bg-gray-100 transition-colors"
               >
-                🚀 Get Free Quote
+                <span>Get Free Quote</span> <ArrowRight size={16} />
               </a>
             </div>
           </div>

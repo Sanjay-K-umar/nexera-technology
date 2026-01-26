@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, Facebook, Instagram, Loader2 } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Loader2, CheckCircle2, Star } from "lucide-react";
 
 export default function ContactPage() {
   const { toast } = useToast();
@@ -69,7 +69,9 @@ export default function ContactPage() {
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">✅ Free Quote • No Commitment • 24hr Response</div>
+            <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+              <CheckCircle2 size={16} /> Free Quote • No Commitment • 24hr Response
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Get Your Free Quote in 24 Hours
             </h1>
@@ -140,7 +142,7 @@ export default function ContactPage() {
                       Sending Your Request...
                     </>
                   ) : (
-                    "🚀 Get My Free Quote Now"
+                    "Get My Free Quote Now"
                   )}
                 </Button>
                 <p className="text-center text-gray-500 text-sm mt-3">We respond to every message within 24 hours</p>
