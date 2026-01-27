@@ -222,6 +222,8 @@ export default function RootLayout({
         </a>
         <Header />
         <main id="main-content" className="min-h-screen">
+          {children}
+        </main>
         <Footer />
         <Toaster />
         <Analytics />
