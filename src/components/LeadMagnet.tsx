@@ -33,14 +33,15 @@ export function LeadMagnet({
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Accept": "application/json"
         },
         body: JSON.stringify({
-          access_key: "d0503d50-5c87-46c5-a7c1-67eb12549778",
+          access_key: "904c717c-d8f9-46e9-9d64-2cb4325f819f",
           name: name,
           email: email,
-          subject: "Free Data Health Check Request",
-          message: `New lead magnet signup:\n\nName: ${name}\nEmail: ${email}\n\nRequested: Free Data Health Check`,
-          from_name: "Nexera Website Lead Magnet",
+          to: "info@nexeratechnco.com",
+          subject: "🎁 Free Data Health Check Request",
+          message: `New lead magnet signup:\n\nName: ${name}\nEmail: ${email}\n\nRequested: Free Data Health Check\n\nThis person wants a free assessment of their data/Excel setup.`,
         }),
       });
 
