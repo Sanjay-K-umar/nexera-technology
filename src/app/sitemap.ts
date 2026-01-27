@@ -39,6 +39,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.92,
   }))
 
+  // "Near Me" search landing pages - HIGH priority for visibility
+  const nearMePages = [
+    '/excel-help',
+    '/shopify-expert',
+    '/power-bi-consultant',
+    '/website-developer',
+    '/data-cleanup',
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly' as const,
+    priority: 0.93,
+  }))
+
   // Location pages - high priority for local SEO "near me" searches
   const locationPages = [
     '/toronto',
@@ -77,5 +91,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
-  return [homepage, ...mainPages, ...servicePages, ...locationPages, ...caseStudyPages, ...blogPosts]
+  return [homepage, ...mainPages, ...servicePages, ...nearMePages, ...locationPages, ...caseStudyPages, ...blogPosts]
 }
