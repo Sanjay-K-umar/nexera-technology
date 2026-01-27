@@ -63,7 +63,7 @@ export default function Home() {
       <section className="py-16 bg-gradient-to-b from-white to-blue-50 border-b">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-            <CheckCircle size={16} /> Personal Service, Not Agency Runaround
+            <CheckCircle size={16} aria-hidden="true" /> Personal Service, Not Agency Runaround
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Work Directly With an Expert Who Gets Results</h2>
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
@@ -75,7 +75,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="rounded-full bg-green-600 hover:bg-green-700 text-white font-bold shadow-lg">
               <Link href="/contact" className="flex items-center">
-                Get Your Free Quote <ArrowRight className="ml-2 h-4 w-4" />
+                Get Your Free Quote <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full">
@@ -85,7 +85,7 @@ export default function Home() {
             </Button>
           </div>
           <p className="text-gray-500 text-sm mt-4 flex items-center justify-center gap-2">
-            <Clock size={16} /> Most quotes delivered within 24 hours
+            <Clock size={16} aria-hidden="true" /> Most quotes delivered within 24 hours
           </p>
         </div>
       </section>
@@ -120,7 +120,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <ServiceCard
-              icon={<BarChart3 className="h-12 w-12" />}
+              icon={<BarChart3 className="h-12 w-12" aria-hidden="true" />}
               title="Data & Analytics"
               description="Turn your messy data into clear, actionable insights with custom dashboards and automated reports."
               services={[
@@ -133,7 +133,7 @@ export default function Home() {
             />
 
             <ServiceCard
-              icon={<ShoppingCart className="h-12 w-12" />}
+              icon={<ShoppingCart className="h-12 w-12" aria-hidden="true" />}
               title="Web & eCommerce"
               description="Get your business online fast with professional websites and Shopify stores that actually convert."
               services={[
@@ -146,7 +146,7 @@ export default function Home() {
             />
 
             <ServiceCard
-              icon={<Zap className="h-12 w-12" />}
+              icon={<Zap className="h-12 w-12" aria-hidden="true" />}
               title="Business Automation"
               description="Stop wasting time on repetitive tasks. Automate your workflows and focus on growing your business."
               services={[
@@ -183,7 +183,7 @@ export default function Home() {
                   className="flex items-start gap-3 animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CheckCircle className="h-6 w-6 flex-shrink-0 mt-1" />
+                  <CheckCircle className="h-6 w-6 flex-shrink-0 mt-1" aria-hidden="true" />
                   <p className="text-lg">{problem}</p>
                 </div>
               ))}
@@ -194,11 +194,11 @@ export default function Home() {
                 You&apos;re not alone. <strong>These are the exact problems we solve for small businesses every single day.</strong>
               </p>
               <p className="text-lg mb-8 text-blue-200 flex items-center justify-center gap-2">
-                <Lightbulb size={20} /> The best part? Most of our clients see results within the first week.
+                <Lightbulb size={20} aria-hidden="true" /> The best part? Most of our clients see results within the first week.
               </p>
               <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6 font-bold shadow-lg">
                 <Link href="/contact" className="flex items-center">
-                  Yes, I Want to Fix This <ArrowRight className="ml-2" />
+                  Yes, I Want to Fix This <ArrowRight className="ml-2" aria-hidden="true" />
                 </Link>
               </Button>
               <p className="text-blue-200 text-sm mt-4">Free consultation • No commitment • Real solutions</p>
@@ -226,7 +226,7 @@ export default function Home() {
             </p>
             <Button asChild size="lg">
               <Link href="/about">
-                Learn More About Us <ArrowRight className="ml-2" />
+                Learn More About Us <ArrowRight className="ml-2" aria-hidden="true" />
               </Link>
             </Button>
           </div>
@@ -247,11 +247,11 @@ export default function Home() {
           </p>
           <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6 font-bold shadow-lg animate-pulse">
             <Link href="/contact" className="flex items-center">
-              Get My Free Quote Now <ArrowRight className="ml-2" />
+              Get My Free Quote Now <ArrowRight className="ml-2" aria-hidden="true" />
             </Link>
           </Button>
           <p className="text-blue-200 text-sm mt-4 flex items-center justify-center gap-2">
-            <Clock size={16} /> Response within 24 hours • No sales pressure • Real solutions
+            <Clock size={16} aria-hidden="true" /> Response within 24 hours • No sales pressure • Real solutions
           </p>
         </div>
       </section>

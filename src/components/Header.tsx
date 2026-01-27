@@ -46,7 +46,7 @@ export function Header() {
             </Link>
             <Button asChild size="sm" className="bg-green-600 hover:bg-green-700 text-white font-semibold animate-pulse">
               <Link href="/contact" className="flex items-center gap-2">
-                <Phone size={16} />
+                <Phone size={16} aria-hidden="true" />
                 <span>Get Free Quote</span>
               </Link>
             </Button>
@@ -56,8 +56,10 @@ export function Header() {
           <button
             className="lg:hidden text-foreground"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
           >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {mobileMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
           </button>
         </div>
 

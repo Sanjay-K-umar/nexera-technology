@@ -30,7 +30,7 @@ export function ServiceCard({ icon, title, description, services, link, delay = 
             <ul className="space-y-3 mb-6 flex-grow">
               {services.map((service, index) => (
                 <li key={index} className="flex items-start gap-2">
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
                   <span className="text-sm">{service}</span>
                 </li>
               ))}
@@ -38,7 +38,7 @@ export function ServiceCard({ icon, title, description, services, link, delay = 
             
             <div className="flex items-center text-primary font-semibold group-hover:gap-2 transition-all text-lg">
               Learn More
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform" />
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform" aria-hidden="true" />
             </div>
           </div>
         </Card>
