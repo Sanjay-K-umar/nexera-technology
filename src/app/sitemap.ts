@@ -39,6 +39,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.92,
   }))
 
+  // Location pages - high priority for local SEO "near me" searches
+  const locationPages = [
+    '/toronto',
+    '/brampton',
+    '/oakville',
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly' as const,
+    priority: 0.88,
+  }))
+
+  // Case study pages - high priority for trust and conversions
+  const caseStudyPages = [
+    '/projects/excel-automation-mississauga-retailer',
+    '/projects/power-bi-dashboard-gta-restaurant',
+    '/projects/shopify-ecommerce-brampton',
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.85,
+  }))
+
   // Blog posts - good priority for content SEO
   const blogPosts = [
     '/blog/excel-automation-small-business',
@@ -53,5 +77,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
-  return [homepage, ...mainPages, ...servicePages, ...blogPosts]
+  return [homepage, ...mainPages, ...servicePages, ...locationPages, ...caseStudyPages, ...blogPosts]
 }

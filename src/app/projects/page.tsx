@@ -2,17 +2,58 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { TrendingUp, ShoppingCart, Zap, ArrowRight } from "lucide-react";
+import { TrendingUp, ShoppingCart, Zap, ArrowRight, FileSpreadsheet, BarChart3, Clock, DollarSign, ExternalLink } from "lucide-react";
+import { LeadMagnet } from "@/components/LeadMagnet";
 
 export const metadata: Metadata = {
-  title: "Our Work & Case Studies | Nexera Technology Success Stories",
-  description: "See how Nexera Technology has helped GTA businesses achieve real results. Case studies in automation, data analytics, and eCommerce transformation.",
+  title: "Case Studies & Success Stories | Excel, Power BI & Shopify Projects Ontario",
+  description: "See how Nexera Technology has helped GTA businesses achieve real results. Detailed case studies in Excel automation, Power BI dashboards, and Shopify development.",
+  keywords: [
+    'Excel automation case study', 'Power BI dashboard case study Ontario',
+    'Shopify success story Canada', 'business automation results GTA',
+    'data analytics case study Toronto', 'Mississauga business success'
+  ],
   alternates: {
     canonical: "/projects",
   },
 };
 
 export default function ProjectsPage() {
+  // Featured detailed case studies (with dedicated pages)
+  const featuredCaseStudies = [
+    {
+      slug: "excel-automation-mississauga-retailer",
+      title: "How We Saved a Mississauga Retailer 10+ Hours/Week with Excel Automation",
+      client: "Multi-Location Retail Business",
+      location: "Mississauga, ON",
+      icon: FileSpreadsheet,
+      color: "green",
+      results: ["10+ hours saved weekly", "$2,400/month value", "Zero errors"],
+      category: "Excel Automation"
+    },
+    {
+      slug: "power-bi-dashboard-gta-restaurant",
+      title: "GTA Restaurant Optimizes Delivery Performance with Power BI",
+      client: "Restaurant & Delivery Business",
+      location: "Greater Toronto Area",
+      icon: BarChart3,
+      color: "blue",
+      results: ["23% faster delivery", "15% fewer refunds", "4.9 Google rating"],
+      category: "Power BI Dashboard"
+    },
+    {
+      slug: "shopify-ecommerce-brampton",
+      title: "From Market Stall to $15K/Month: Brampton Shopify Success",
+      client: "Handmade Fashion Brand",
+      location: "Brampton, ON",
+      icon: ShoppingCart,
+      color: "purple",
+      results: ["340% revenue growth", "$15K+ monthly", "2,000+ customers"],
+      category: "Shopify Development"
+    }
+  ];
+
+  // Quick overview projects (without dedicated pages)
   const projects = [
     {
       id: 1,
@@ -54,13 +95,50 @@ export default function ProjectsPage() {
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Our Work, Your Results
+            Case Studies & Success Stories
           </h1>
           <p className="text-xl text-gray-600">
-            Real businesses. Real challenges. Real results. See how we&apos;ve helped companies across the GTA and beyond turn complexity into clarity.
+            Real businesses. Real challenges. Real results. See how we&apos;ve helped companies across the GTA and Ontario turn complexity into clarity.
           </p>
         </div>
 
+        {/* Featured Case Studies with Dedicated Pages */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold mb-8 text-center">Featured Case Studies</h2>
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {featuredCaseStudies.map((study) => (
+              <Link key={study.slug} href={`/projects/${study.slug}`}>
+                <Card className="p-6 h-full hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer border-2 hover:border-primary">
+                  <div className={`bg-${study.color}-100 p-3 rounded-lg w-fit mb-4`}>
+                    <study.icon className={`h-6 w-6 text-${study.color}-600`} />
+                  </div>
+                  <span className="text-sm font-medium text-primary">{study.category}</span>
+                  <h3 className="font-bold text-lg mt-1 mb-2 line-clamp-2">{study.title}</h3>
+                  <p className="text-gray-600 text-sm mb-4">{study.client} • {study.location}</p>
+                  <div className="space-y-2 mb-4">
+                    {study.results.map((result, idx) => (
+                      <div key={idx} className="flex items-center gap-2 text-sm">
+                        <div className={`w-1.5 h-1.5 bg-${study.color}-600 rounded-full`}></div>
+                        <span className="font-medium">{result}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="flex items-center gap-1 text-primary font-semibold text-sm">
+                    Read Full Case Study <ExternalLink className="h-3 w-3" />
+                  </div>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Lead Magnet */}
+        <div className="max-w-md mx-auto mb-16">
+          <LeadMagnet />
+        </div>
+
+        {/* Quick Overview Projects */}
+        <h2 className="text-2xl font-bold mb-8 text-center">More Success Stories</h2>
         <div className="grid md:grid-cols-1 gap-8 max-w-5xl mx-auto mb-16">
           {projects.map((project) => (
             <Card key={project.id} className="p-8 hover:shadow-xl transition-shadow">

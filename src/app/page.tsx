@@ -5,6 +5,7 @@ import { ArrowRight, BarChart3, ShoppingCart, Zap, CheckCircle, Clock, Lightbulb
 import { HeroRotator } from '@/components/HeroRotator'
 import { BeforeAfter } from '@/components/BeforeAfter'
 import { ServiceCard } from '@/components/ServiceCard'
+import { LeadMagnet } from '@/components/LeadMagnet'
 
 export const metadata: Metadata = {
   title: 'Hire Tech Consultant Ontario | Power BI, Excel & Web Development Services',
@@ -28,6 +29,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      {/* Lead Magnet Banner */}
+      <LeadMagnet variant="banner" />
+      
       {/* Hero Section with Interactive Demos */}
       <HeroRotator />
 
