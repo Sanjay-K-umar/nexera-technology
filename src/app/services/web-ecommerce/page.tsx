@@ -15,19 +15,21 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Hire Web Developer Mississauga | Shopify Expert & Store Development Ontario",
-  description: "Looking to hire a web developer in Mississauga? We provide custom Shopify store development and small business web design in Ontario. Get a professional, affordable eCommerce website today. Free consultation.",
+  title: "Web Developer Mississauga | Shopify, WordPress & Wix Expert Ontario",
+  description: "Hire a web developer in Mississauga for Shopify stores, WordPress sites, or Wix websites. Small business web design & eCommerce solutions in Ontario. Free consultation.",
   keywords: [
     'hire web developer Mississauga', 'Shopify expert Mississauga', 'Shopify store development Ontario',
+    'WordPress developer Ontario', 'WordPress website design Mississauga', 'Wix website designer GTA',
     'custom web development services GTA', 'small business web design Ontario', 'eCommerce website experts near me',
-    'Shopify development pricing', 'website designer Mississauga', 'get business online Ontario'
+    'Shopify development pricing', 'website designer Mississauga', 'get business online Ontario',
+    'WordPress eCommerce Ontario', 'Wix expert near me', 'affordable website design GTA'
   ],
   alternates: {
     canonical: "/services/web-ecommerce",
   },
   openGraph: {
-    title: "Web Development & Shopify Services Near Me | Nexera Technology",
-    description: "Expert web development and Shopify services in Mississauga, GTA. Custom websites and eCommerce solutions.",
+    title: "Web Development Services | Shopify, WordPress & Wix | Nexera Technology",
+    description: "Expert web development in Mississauga, GTA. Shopify stores, WordPress websites, Wix sites & custom eCommerce solutions.",
     url: "/services/web-ecommerce",
     type: "website",
   },
@@ -44,7 +46,7 @@ export default function WebEcommercePage() {
               Get Your Business Online in Days, Not Months
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Professional Shopify stores and websites that actually convert. No technical skills required.
+              Professional websites on Shopify, WordPress, or Wix that actually convert. No technical skills required.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
@@ -143,9 +145,87 @@ export default function WebEcommercePage() {
 
               <div>
                 <Palette className="h-12 w-12 text-blue-600 mb-4" />
+                <h3 className="text-2xl font-bold mb-4">WordPress Website Development</h3>
+                <p className="text-gray-600 mb-4">
+                  The world&apos;s most popular platform for a reason. Get a powerful, flexible WordPress site with full content control and endless customization options.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Custom theme design &amp; development</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>WooCommerce for eCommerce</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Plugin setup &amp; configuration</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>SEO optimization (Yoast, RankMath)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Security hardening &amp; backups</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Hosting setup &amp; migration</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Training &amp; documentation included</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 mt-12">
+              <div>
+                <Smartphone className="h-12 w-12 text-blue-600 mb-4" />
+                <h3 className="text-2xl font-bold mb-4">Wix Website Design</h3>
+                <p className="text-gray-600 mb-4">
+                  Need a stunning website fast? Wix is perfect for small businesses wanting a professional look without the complexity. Easy to maintain yourself.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Beautiful drag-and-drop design</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Built-in booking &amp; scheduling</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Contact forms &amp; chat integration</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Wix Stores for eCommerce</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>SEO &amp; marketing tools setup</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Mobile-optimized design</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
+                    <span>Training to manage it yourself</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <Palette className="h-12 w-12 text-blue-600 mb-4" />
                 <h3 className="text-2xl font-bold mb-4">Custom Website Development</h3>
                 <p className="text-gray-600 mb-4">
-                  Need something beyond eCommerce? We build custom websites using modern frameworks (Next.js, React) for blazing-fast performance and SEO.
+                  Need something beyond templates? We build custom websites using modern frameworks (Next.js, React) for blazing-fast performance and SEO.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
@@ -180,7 +260,7 @@ export default function WebEcommercePage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-12 mt-12">
               <div>
                 <Search className="h-12 w-12 text-blue-600 mb-4" />
                 <h3 className="text-2xl font-bold mb-4">SEO &amp; Performance Optimization</h3>

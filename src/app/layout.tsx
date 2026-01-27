@@ -15,15 +15,15 @@ export const metadata: Metadata = {
     default: 'Nexera Tech | Data, Web & Automation Services | GTA',
     template: '%s | Nexera Tech'
   },
-  description: 'Expert Power BI dashboards, Excel automation, Shopify stores & web development in Mississauga, GTA. Free consultation!',
+  description: 'Expert Power BI dashboards, Excel automation, WordPress, Wix, Shopify & web development in Mississauga, GTA. Free consultation!',
   keywords: [
     'Nexera', 'Nexera Technology', 'Nexera Tech',
     // High-Intent Power BI
     'hire Power BI consultant Ontario', 'Power BI dashboard services Mississauga', 'Power BI developer for small business Ontario', 'Power BI consulting services GTA', 'Power BI price Ontario', 'Power BI expert near me',
     // High-Intent Excel
     'Excel automation services Ontario', 'Excel automation consultant GTA', 'VBA macros services Mississauga', 'business process automation Excel Ontario', 'hire Excel expert near me', 'automate Excel workflows',
-    // High-Intent Web & Shopify
-    'hire web developer Mississauga', 'Shopify expert Mississauga', 'Shopify store development Ontario', 'custom web development services Ontario', 'small business web design services',
+    // High-Intent Web - Shopify, WordPress & Wix
+    'hire web developer Mississauga', 'Shopify expert Mississauga', 'Shopify store development Ontario', 'WordPress developer Ontario', 'WordPress website design Mississauga', 'Wix website designer GTA', 'Wix expert near me', 'custom web development services Ontario', 'small business web design services',
     // Consultant & ROI
     'business analytics consultant Ontario', 'small business technology consultant Mississauga', 'affordable BI consulting', 'data analytics consultant GTA'
   ],
