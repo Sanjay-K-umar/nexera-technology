@@ -8,15 +8,15 @@ import { ServiceCard } from '@/components/ServiceCard'
 import { LeadMagnet } from '@/components/LeadMagnet'
 
 export const metadata: Metadata = {
-  title: 'Hire Tech Consultant Ontario | Power BI, Excel & Web Development Services',
-  description: 'Looking for a technology consultant in Mississauga or GTA? Hire an expert for Power BI dashboards, Excel automation, and custom web development. Personal service, affordable rates, and real ROI for small businesses.',
+  title: 'Tech Consultant Ontario | Power BI, Excel & Web Dev',
+  description: 'Hire a tech consultant in Mississauga & GTA for Power BI dashboards, Excel automation, and web development. Affordable rates, real ROI.',
   keywords: [
     'hire technology consultant Ontario', 'small business tech consultant Mississauga', 'data analytics consultant',
     'Excel automation expert', 'Power BI developer near me', 'Shopify expert Ontario',
     'business process automation consultant', 'affordable IT consulting GTA'
   ],
   alternates: {
-    canonical: '/',
+    canonical: 'https://nexeratechnco.com',
   },
   openGraph: {
     title: 'Nexera Technology | Data Services, Web Development & Automation Near Me',

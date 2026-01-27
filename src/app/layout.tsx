@@ -12,10 +12,10 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://nexeratechnco.com'),
   title: {
-    default: 'Nexera Technology and Consultancy | Data Services, Web Development & Automation Near Me | Mississauga, GTA, Ontario',
-    template: '%s | Nexera Tech & Co'
+    default: 'Nexera Tech | Data, Web & Automation Services | GTA',
+    template: '%s | Nexera Tech'
   },
-  description: 'Nexera Technology and Consultancy (Nexera Tech & Co) - Leading data services, web development services, and business automation near you. Excel automation, Power BI dashboards, Shopify stores, and workflow automation in Mississauga, Brampton, Toronto, GTA, and across Ontario, Canada. Call now for free consultation!',
+  description: 'Expert Power BI dashboards, Excel automation, Shopify stores & web development in Mississauga, GTA. Free consultation!',
   keywords: [
     'Nexera', 'Nexera Technology', 'Nexera Tech',
     // High-Intent Power BI
@@ -70,6 +70,11 @@ export const metadata: Metadata = {
     },
   },
   manifest: '/site.webmanifest',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   verification: {
     google: 'viIsy3FzbgJU6KgQDT_fJUuqEG5mv7oNokJXQ6Be49I',
   },
