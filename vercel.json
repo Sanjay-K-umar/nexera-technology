@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path((?!api).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nexeratechnco.com"
+        }
+      ],
+      "destination": "https://nexeratechnco.com/:path",
+      "permanent": true
+    }
+  ]
+}
