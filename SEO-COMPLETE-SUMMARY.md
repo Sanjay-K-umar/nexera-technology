@@ -46,9 +46,9 @@ git push
 ```
 
 ### Step 2: Set Environment Variable
-In Netlify dashboard:
+In Vercel dashboard (Settings → Environment Variables):
 ```
-NEXT_PUBLIC_SITE_URL=https://your-actual-domain.com
+NEXT_PUBLIC_SITE_URL=https://nexeratechnco.com
 ```
 
 ### Step 3: Create OG Image (if not done)

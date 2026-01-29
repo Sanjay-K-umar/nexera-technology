@@ -77,9 +77,9 @@ Create these profiles (use same info everywhere):
 **Why**: Ensure proper metadata and URLs!
 
 **Action**:
-1. In Netlify dashboard, add environment variable:
+1. In Vercel dashboard (Settings → Environment Variables), add:
    ```
-   NEXT_PUBLIC_SITE_URL=https://your-actual-domain.com
+   NEXT_PUBLIC_SITE_URL=https://nexeratechnco.com
    ```
 2. If not done yet, create OG image:
    - Open `public/og-image-template.html` in browser
@@ -91,6 +91,7 @@ Create these profiles (use same info everywhere):
    git commit -m "SEO optimization complete"
    git push
    ```
+   Vercel auto-deploys when you push to GitHub!
 
 ---
 

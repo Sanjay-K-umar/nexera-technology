@@ -34,8 +34,8 @@ git add .
 git commit -m "SEO optimization complete"
 git push
 
-# 2. Set in Netlify:
-NEXT_PUBLIC_SITE_URL=https://your-domain.com
+# 2. Set in Vercel (Settings → Environment Variables):
+NEXT_PUBLIC_SITE_URL=https://nexeratechnco.com
 
 # 3. Create OG image (if missing):
 # Open public/og-image-template.html → screenshot → save as og-image.jpg

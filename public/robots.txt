@@ -1,54 +1,86 @@
 # Nexera Technology and Consultancy - Robots.txt
-# Optimized to prevent indexing of junk/legacy pages
+# Optimized for Maximum SEO Performance
 
 # ===========================================
-# BLOCK LEGACY/JUNK PAGES (from old platforms)
+# DEFAULT RULES (All Search Engines)
 # ===========================================
 User-agent: *
 Allow: /
 
-# Block old Shopify/eCommerce paths
+# Block old Shopify/eCommerce paths (legacy ghost pages)
 Disallow: /collections/
 Disallow: /products/
 Disallow: /checkout
 Disallow: /checkout/
 Disallow: /cart
 Disallow: /cart/
+
+# Block account/user paths
 Disallow: /account
 Disallow: /account/
+Disallow: /customer-cabinet
+Disallow: /login
+Disallow: /register
 
 # Block old WordPress/CMS paths
 Disallow: /wp-admin/
 Disallow: /wp-content/
 Disallow: /wp-includes/
-Disallow: /customer-cabinet
 Disallow: /pages/
+Disallow: /wp-login.php
 
 # Block internal/private paths
 Disallow: /api/
 Disallow: /_next/static/
 Disallow: /admin/
+Disallow: /private/
+
+# Block query parameters that create duplicate content
+Disallow: /*?*utm_
+Disallow: /*?*ref=
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
 
 # ===========================================
-# SEARCH ENGINE SPECIFIC RULES
+# GOOGLE (Priority Crawler)
 # ===========================================
-
-# Google
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
 
-# Google Images
 User-agent: Googlebot-Image
 Allow: /
 
-# Bing
+User-agent: Googlebot-News
+Allow: /blog/
+
+User-agent: Googlebot-Video
+Allow: /
+
+# ===========================================
+# BING
+# ===========================================
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 0
 
+User-agent: MSNBot
+Allow: /
+
 # ===========================================
-# SOCIAL MEDIA BOTS (Allow all for sharing)
+# OTHER MAJOR SEARCH ENGINES
+# ===========================================
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# ===========================================
+# SOCIAL MEDIA BOTS (Allow for rich sharing)
 # ===========================================
 User-agent: Twitterbot
 Allow: /
@@ -59,10 +91,29 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Pinterest
+Allow: /
+
 # ===========================================
-# SITEMAP
+# AI CRAWLERS (Allow for discoverability)
+# ===========================================
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# ===========================================
+# SITEMAP & HOST (Canonical Domain)
 # ===========================================
 Sitemap: https://nexeratechnco.com/sitemap.xml
-
-# Host directive (canonical domain - non-www)
 Host: https://nexeratechnco.com

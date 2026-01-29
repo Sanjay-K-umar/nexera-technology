@@ -273,11 +273,10 @@ npm i -g vercel
 vercel
 ```
 
-### Option 2: Netlify
+### Option 2: Other Platforms
 
-1. Connect GitHub repository
-2. Build command: `npm run build`
-3. Publish directory: `.next`
+Your site is deployed on **Vercel** (recommended for Next.js).
+Vercel auto-deploys when you push to GitHub.
 
 ### Option 3: Custom Server
 
@@ -328,7 +327,7 @@ Your site should achieve these Lighthouse scores:
 ### Before Launch
 1. 🚀 Run production build (`npm run build`)
 2. 🚀 Test all functionality
-3. 🚀 Deploy to Vercel/Netlify
+3. 🚀 Deploy to Vercel
 4. 🚀 Configure domain
 5. 🚀 Submit to search engines
 

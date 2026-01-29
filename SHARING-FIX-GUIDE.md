@@ -6,7 +6,6 @@ When sharing your website link on WhatsApp, Facebook, or other platforms, it was
 ## Root Causes Found
 1. **Missing Open Graph Image** - No `og-image.jpg` file existed
 2. **Incorrect Open Graph URL** - Used relative path `'/'` instead of absolute URL
-3. **Wrong Netlify Configuration** - Static site redirect instead of Next.js configuration
 
 ## ✅ Fixes Applied
 
@@ -15,13 +14,9 @@ When sharing your website link on WhatsApp, Facebook, or other platforms, it was
 - Updated image paths to use absolute URLs
 - Both OpenGraph and Twitter Card now use proper URLs
 
-### 2. Fixed Netlify Configuration (`netlify.toml`)
-- Removed incorrect static redirect
-- Added Next.js plugin configuration
-
-### 3. Updated Redirects File (`public/_redirects`)
-- Removed conflicting redirect rule
-- Now managed by Netlify Next.js plugin
+### 2. Vercel Configuration (`vercel.json`)
+- Added www → non-www redirect for domain consolidation
+- SEO redirects handled in `next.config.js`
 
 ## 🎨 Next Step: Create Your OG Image
 
@@ -52,12 +47,12 @@ Make sure your environment variables are set correctly:
 NEXT_PUBLIC_SITE_URL=https://your-actual-domain.com
 ```
 
-**For Netlify (Dashboard → Site Settings → Environment Variables):**
+**For Vercel (Dashboard → Settings → Environment Variables):**
 ```
-NEXT_PUBLIC_SITE_URL=https://your-actual-domain.com
+NEXT_PUBLIC_SITE_URL=https://nexeratechnco.com
 ```
 
-Replace `your-actual-domain.com` with your actual deployed domain.
+This is already configured for your production domain.
 
 ## 🧪 Testing After Deployment
 
@@ -83,8 +78,7 @@ After you deploy with the OG image:
 - [ ] Create `og-image.jpg` file (1200x630px)
 - [ ] Place it in `public/og-image.jpg`
 - [ ] Set `NEXT_PUBLIC_SITE_URL` environment variable
-- [ ] Deploy to Netlify
-- [ ] Install Netlify Next.js plugin (if not auto-installed)
+- [ ] Deploy to Vercel
 - [ ] Clear social media caches
 - [ ] Test link sharing on WhatsApp, Facebook, LinkedIn
 
@@ -96,7 +90,7 @@ git add .
 git commit -m "Fix Open Graph metadata and website sharing"
 git push
 
-# Netlify will auto-deploy if connected to your repo
+# Vercel will auto-deploy if connected to your repo
 ```
 
 ## ❓ Still Having Issues?
@@ -104,10 +98,9 @@ git push
 If after deployment you still see issues:
 
 1. **Check the actual URL** - Make sure `NEXT_PUBLIC_SITE_URL` matches your deployed domain exactly
-2. **Verify OG image exists** - Visit `https://your-domain.com/og-image.jpg` directly
+2. **Verify OG image exists** - Visit `https://nexeratechnco.com/og-image.jpg` directly
 3. **Clear cache** - Use the Facebook Debugger tool to force refresh
-4. **Check Netlify logs** - Look for any build or deployment errors
-5. **Verify plugin** - Ensure `@netlify/plugin-nextjs` is installed in Netlify
+4. **Check Vercel logs** - Look for any build or deployment errors in the Vercel dashboard
 
 ## 📞 Need Help?
 

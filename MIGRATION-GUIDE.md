@@ -242,23 +242,22 @@ Each service page follows this proven SEO structure:
 
 ## 🚀 Deployment
 
-### Recommended Platforms
-1. **Vercel** (Recommended - built by Next.js creators)
-   ```bash
-   npm i -g vercel
-   vercel
-   ```
+### Deployment Platform
+**Vercel** (Recommended - built by Next.js creators)
 
-2. **Netlify**
-   - Connect GitHub repo
-   - Build command: `npm run build`
-   - Publish directory: `.next`
+Your site is deployed on Vercel and auto-deploys when you push to GitHub.
 
-3. **Custom Server**
-   ```bash
-   npm run build
-   npm run start
-   ```
+```bash
+# Manual deployment (if needed)
+npm i -g vercel
+vercel
+```
+
+**Alternative: Custom Server**
+```bash
+npm run build
+npm run start
+```
 
 ### Pre-Deployment Checklist
 - [ ] Update environment variables
