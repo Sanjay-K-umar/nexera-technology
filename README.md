@@ -1,73 +1,64 @@
-# Welcome to your Lovable project
+# Nexera Technology & Consultancy
 
-## Project info
+**Professional Data Services, Web Development & Business Automation**
 
-**URL**: https://lovable.dev/projects/0a2740a9-5769-41d6-bba5-200f53d94507
+🌐 **Website:** https://nexeratechnco.com  
+📧 **Email:** info@nexeratechnco.com  
+📍 **Location:** Mississauga, GTA, Ontario, Canada
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Services
 
-**Use Lovable**
+- **Power BI Dashboards** - Transform data into actionable insights
+- **Excel Automation** - VBA macros & workflow automation
+- **Web Development** - Shopify, WordPress, Wix, custom websites
+- **Business Automation** - Streamline repetitive tasks
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0a2740a9-5769-41d6-bba5-200f53d94507) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech Stack
 
-**Use your preferred IDE**
+| Technology | Purpose |
+|------------|---------|
+| Next.js 14 | React framework with App Router |
+| TypeScript | Type-safe development |
+| Tailwind CSS | Styling |
+| shadcn/ui | UI components |
+| Vercel | Hosting & deployment |
+| Vercel Analytics | Performance monitoring |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Quick Start
 
-Follow these steps:
+```bash
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Run development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Deploy (auto on git push)
+git push
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Documentation
 
-**Use GitHub Codespaces**
+See **[GUIDE.md](GUIDE.md)** for complete documentation:
+- Project structure
+- Development workflow
+- Deployment
+- SEO configuration
+- Google Search Console setup
+- Ads & marketing guide
+- Troubleshooting
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0a2740a9-5769-41d6-bba5-200f53d94507) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© 2026 Nexera Technology and Consultancy. All rights reserved.
