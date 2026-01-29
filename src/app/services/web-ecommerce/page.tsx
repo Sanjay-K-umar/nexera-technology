@@ -15,21 +15,27 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Web Developer Mississauga | Shopify, WordPress & Wix Expert Ontario",
-  description: "Hire a web developer in Mississauga for Shopify stores, WordPress sites, or Wix websites. Small business web design & eCommerce solutions in Ontario. Free consultation.",
+  title: "#1 Web Developer Mississauga | Shopify, WordPress & Wix Expert Ontario",
+  description: "Get your business online fast! Top-rated web developer in Mississauga, Toronto & GTA. Shopify stores, WordPress sites, Wix websites. Affordable prices. Free consultation.",
   keywords: [
-    'hire web developer Mississauga', 'Shopify expert Mississauga', 'Shopify store development Ontario',
-    'WordPress developer Ontario', 'WordPress website design Mississauga', 'Wix website designer GTA',
-    'custom web development services GTA', 'small business web design Ontario', 'eCommerce website experts near me',
-    'Shopify development pricing', 'website designer Mississauga', 'get business online Ontario',
-    'WordPress eCommerce Ontario', 'Wix expert near me', 'affordable website design GTA'
+    // Primary High-Intent
+    'web developer Mississauga', 'Shopify expert Ontario', 'WordPress developer Toronto',
+    'Wix website designer GTA', 'eCommerce developer', 'website designer near me',
+    // Platform Specific
+    'Shopify store development', 'WordPress website design', 'Wix expert near me', 'custom website development',
+    // Problem-Based
+    'build online store', 'get business online', 'need a website', 'website not converting',
+    // Location-Based
+    'web developer Toronto', 'Shopify expert Brampton', 'WordPress Mississauga', 'website design GTA',
+    // Cost/Hiring Intent
+    'affordable website design', 'website cost Ontario', 'hire web developer', 'Shopify pricing'
   ],
   alternates: {
     canonical: "/services/web-ecommerce",
   },
   openGraph: {
-    title: "Web Development Services | Shopify, WordPress & Wix | Nexera Technology",
-    description: "Expert web development in Mississauga, GTA. Shopify stores, WordPress websites, Wix sites & custom eCommerce solutions.",
+    title: 'Web Development | Shopify, WordPress & Wix Expert | Mississauga & GTA',
+    description: 'Top-rated web developer. Shopify stores, WordPress sites, custom websites. Get online fast!',
     url: "/services/web-ecommerce",
     type: "website",
   },

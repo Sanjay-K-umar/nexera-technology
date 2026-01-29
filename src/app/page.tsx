@@ -8,20 +8,29 @@ import { ServiceCard } from '@/components/ServiceCard'
 import { LeadMagnet } from '@/components/LeadMagnet'
 
 export const metadata: Metadata = {
-  title: 'Tech Consultant Ontario | Power BI, Excel & Web Dev',
-  description: 'Hire a tech consultant in Mississauga & GTA for Power BI dashboards, Excel automation, and web development. Affordable rates, real ROI.',
+  title: 'Nexera Tech | #1 Power BI, Excel & Web Development Consultant Ontario',
+  description: 'Top-rated tech consultant in Mississauga, Toronto & GTA. Expert Power BI dashboards, Excel automation, Shopify stores & web development. Free consultation. 50+ businesses helped.',
   keywords: [
-    'hire technology consultant Ontario', 'small business tech consultant Mississauga', 'data analytics consultant',
-    'Excel automation expert', 'Power BI developer near me', 'Shopify expert Ontario',
-    'business process automation consultant', 'affordable IT consulting GTA'
+    // Brand
+    'Nexera', 'Nexera Technology', 'Nexera Tech', 'nexeratechnco',
+    // High-Intent Service Keywords
+    'hire technology consultant Ontario', 'small business tech consultant Mississauga', 'data analytics consultant near me',
+    'Excel automation expert GTA', 'Power BI developer near me', 'Shopify expert Ontario', 'WordPress developer Mississauga',
+    'business process automation consultant', 'affordable IT consulting GTA', 'tech consultant Toronto',
+    // Near Me Searches
+    'tech services near me', 'data consultant near me', 'web developer near me', 'Excel help near me',
+    // Specific Services
+    'custom Power BI dashboard', 'Excel VBA automation', 'Shopify store setup', 'business website design',
+    // Location + Service
+    'Power BI consultant Mississauga', 'Excel automation Toronto', 'Shopify developer Brampton', 'web design GTA'
   ],
   alternates: {
     canonical: 'https://nexeratechnco.com',
   },
   openGraph: {
-    title: 'Nexera Technology | Data Services, Web Development & Automation Near Me',
-    description: 'Leading provider of data services, web development, and business automation in Mississauga, GTA.',
-    url: '/',
+    title: 'Nexera Technology | #1 Data, Web & Automation Services | Mississauga & GTA',
+    description: 'Top-rated Power BI, Excel automation, Shopify & web development in Ontario. 50+ businesses helped. Free consultation!',
+    url: 'https://nexeratechnco.com',
     type: 'website',
   },
 }

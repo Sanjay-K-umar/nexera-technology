@@ -5,21 +5,25 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle2, Clock, HelpCircle, Phone, ShoppingCart, Palette, Rocket, Settings, TrendingUp, CreditCard } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Shopify Expert Near Me | Build Shopify Store Mississauga, Toronto, GTA | Custom Development",
-  description: "Need a Shopify expert? Build or fix your Shopify store with a local expert in Mississauga. Custom themes, store setup, migration, and optimization. Serving Toronto & GTA. Free consultation!",
+  title: "Shopify Expert Near Me | Build Shopify Store | Mississauga, Toronto, GTA",
+  description: "Need a Shopify expert? Build your dream store with a local Shopify developer! Custom themes, store setup, migration, SEO. Mississauga, Toronto & GTA. From $1,500. Free consultation!",
   keywords: [
-    'Shopify expert near me', 'Shopify developer near me', 'build Shopify store',
-    'Shopify store setup', 'Shopify help', 'Shopify designer Mississauga',
-    'Shopify developer Toronto', 'Shopify consultant GTA', 'custom Shopify theme',
-    'Shopify migration', 'Shopify store not selling', 'fix Shopify store',
-    'Shopify SEO help', 'Shopify conversion optimization', 'start online store Ontario'
+    // Near Me (Highest Priority)
+    'Shopify expert near me', 'Shopify developer near me', 'Shopify consultant near me', 'Shopify help near me',
+    // Service-Based (High Intent)
+    'build Shopify store', 'Shopify store setup', 'custom Shopify theme', 'Shopify migration',
+    'Shopify store not selling', 'fix Shopify store', 'Shopify SEO', 'Shopify optimization',
+    // Location-Based
+    'Shopify developer Mississauga', 'Shopify expert Toronto', 'Shopify consultant GTA', 'Shopify Brampton',
+    // Platform Comparison
+    'Shopify vs WooCommerce', 'start online store Ontario', 'eCommerce store Canada'
   ],
   alternates: {
     canonical: "/shopify-expert",
   },
   openGraph: {
-    title: "Need a Shopify Expert? Local Developer in Mississauga & GTA",
-    description: "Custom Shopify stores, theme development, and optimization. Free consultation available.",
+    title: "Need a Shopify Expert? Local Developer | From $1,500",
+    description: "Custom Shopify stores, theme development, optimization. Free consultation in Mississauga & GTA.",
     url: "/shopify-expert",
   },
 };

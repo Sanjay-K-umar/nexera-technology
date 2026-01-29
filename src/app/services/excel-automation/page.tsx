@@ -5,19 +5,27 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight, FileSpreadsheet, Clock, Zap, CheckCircle, AlertCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Excel Automation Services Ontario | Hire Excel Consultant GTA & Mississauga",
-  description: "Looking for an Excel automation expert in Ontario? Hire Nexera to automate your spreadsheets, fix VBA macros, and save 10+ hours weekly. Affordable rates & free audit. Serving Mississauga, Toronto, GTA.",
+  title: "#1 Excel Automation Services Ontario | VBA Expert Mississauga & GTA",
+  description: "Save 10+ hours weekly with Excel automation! Top-rated Excel consultant in Mississauga, Toronto & GTA. VBA macros, formulas, reports automated. Free audit. Affordable rates.",
   keywords: [
+    // Primary High-Intent
     'Excel automation services Ontario', 'Excel automation consultant GTA', 'hire Excel expert Mississauga',
-    'VBA macros services Ontario', 'automate Excel workflows consultant', 'Excel spreadsheet automation cost',
-    'Excel consultant for small business', 'custom Excel programming services', 'business process automation Excel'
+    'VBA macros services Ontario', 'automate Excel workflows', 'Excel spreadsheet automation',
+    // Problem-Based
+    'fix slow Excel file', 'Excel formula errors', 'automate Excel reports', 'Excel macros not working',
+    // Location-Based
+    'Excel consultant Toronto', 'Excel help Mississauga', 'Excel expert Brampton', 'VBA developer GTA',
+    // Specific Services
+    'custom Excel programming', 'Excel dashboard creation', 'automated reporting Excel', 'Excel data entry automation',
+    // Cost/Hiring Intent
+    'Excel automation cost', 'hire Excel developer', 'Excel freelancer Ontario', 'affordable Excel services'
   ],
   alternates: {
     canonical: "/services/excel-automation",
   },
   openGraph: {
-    title: 'Excel Automation Services Near Me | Nexera Technology',
-    description: 'Excel automation expert in Mississauga. Fix spreadsheets, automate reports, save 10+ hours weekly.',
+    title: 'Excel Automation Expert | Save 10+ Hours Weekly | Mississauga & GTA',
+    description: 'Top-rated Excel consultant. Automate spreadsheets, fix formulas, create reports. Free audit included.',
     url: '/services/excel-automation',
   },
 };;

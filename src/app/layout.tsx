@@ -15,17 +15,26 @@ export const metadata: Metadata = {
     default: 'Nexera Tech | Data, Web & Automation Services | GTA',
     template: '%s | Nexera Tech'
   },
-  description: 'Expert Power BI dashboards, Excel automation, WordPress, Wix, Shopify & web development in Mississauga, GTA. Free consultation!',
+  description: 'Top-rated Power BI dashboards, Excel automation, Shopify, WordPress & Wix web development in Mississauga, Toronto, GTA. 50+ businesses helped. Free consultation!',
   keywords: [
-    'Nexera', 'Nexera Technology', 'Nexera Tech',
+    // Brand Keywords (Critical)
+    'Nexera', 'Nexera Technology', 'Nexera Tech', 'Nexera Tech n Co', 'nexeratechnco', 'Nexera consultancy',
     // High-Intent Power BI
-    'hire Power BI consultant Ontario', 'Power BI dashboard services Mississauga', 'Power BI developer for small business Ontario', 'Power BI consulting services GTA', 'Power BI price Ontario', 'Power BI expert near me',
-    // High-Intent Excel
-    'Excel automation services Ontario', 'Excel automation consultant GTA', 'VBA macros services Mississauga', 'business process automation Excel Ontario', 'hire Excel expert near me', 'automate Excel workflows',
-    // High-Intent Web - Shopify, WordPress & Wix
-    'hire web developer Mississauga', 'Shopify expert Mississauga', 'Shopify store development Ontario', 'WordPress developer Ontario', 'WordPress website design Mississauga', 'Wix website designer GTA', 'Wix expert near me', 'custom web development services Ontario', 'small business web design services',
-    // Consultant & ROI
-    'business analytics consultant Ontario', 'small business technology consultant Mississauga', 'affordable BI consulting', 'data analytics consultant GTA'
+    'hire Power BI consultant Ontario', 'Power BI dashboard services Mississauga', 'Power BI developer for small business', 'Power BI consulting services GTA', 'Power BI price Ontario', 'Power BI expert near me', 'Power BI consultant Toronto', 'custom Power BI dashboard', 'Power BI freelancer Canada',
+    // High-Intent Excel  
+    'Excel automation services Ontario', 'Excel automation consultant GTA', 'VBA macros services Mississauga', 'business process automation Excel', 'hire Excel expert near me', 'automate Excel workflows', 'Excel consultant Toronto', 'fix Excel spreadsheet', 'Excel help Mississauga',
+    // High-Intent Web - Shopify
+    'Shopify expert Mississauga', 'Shopify store development Ontario', 'Shopify developer Toronto', 'Shopify store setup', 'hire Shopify expert Canada', 'Shopify consultant GTA', 'build Shopify store',
+    // High-Intent Web - WordPress & Wix
+    'WordPress developer Ontario', 'WordPress website design Mississauga', 'Wix website designer GTA', 'Wix expert near me', 'hire WordPress developer Toronto', 'WordPress freelancer Canada',
+    // General Web
+    'hire web developer Mississauga', 'custom web development services Ontario', 'small business web design', 'website developer near me', 'affordable web design GTA', 'eCommerce developer Ontario',
+    // Near Me Searches (High Intent)
+    'tech consultant near me', 'data services near me', 'web developer near me', 'Excel help near me', 'Power BI near me', 'Shopify expert near me',
+    // Location Specific
+    'technology consultant Mississauga', 'data analyst Toronto', 'web developer Brampton', 'IT consultant Oakville', 'tech services GTA',
+    // Service + Problem
+    'automate business reports', 'fix messy spreadsheets', 'data visualization services', 'business dashboard development', 'convert Excel to Power BI'
   ],
   authors: [{ name: 'Nexera Technology and Consultancy' }],
   creator: 'Nexera Technology and Consultancy',

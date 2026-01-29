@@ -6,20 +6,24 @@ import { ArrowRight, CheckCircle2, Clock, HelpCircle, Phone, BarChart3, Building
 
 export const metadata: Metadata = {
   title: "Power BI Consultant Near Me | Dashboards Mississauga, Toronto, GTA | Hire Expert",
-  description: "Need a Power BI consultant? Hire a local Power BI expert in Mississauga for custom dashboards, reports, and data visualization. Serving Toronto & GTA businesses. Free consultation!",
+  description: "Looking for a Power BI consultant? Get custom dashboards from a local expert! Sales dashboards, KPI tracking, data visualization. Mississauga, Toronto & GTA. Free consultation!",
   keywords: [
-    'Power BI consultant near me', 'Power BI expert near me', 'hire Power BI developer',
-    'Power BI dashboard', 'Power BI help', 'Power BI consultant Mississauga',
-    'Power BI developer Toronto', 'Power BI services GTA', 'custom Power BI dashboard',
-    'business intelligence consultant', 'data visualization expert Ontario',
-    'Power BI report builder', 'Power BI training', 'Power BI cost'
+    // Near Me (Highest Priority)
+    'Power BI consultant near me', 'Power BI expert near me', 'Power BI developer near me', 'BI consultant near me',
+    // Service-Based (High Intent)
+    'hire Power BI developer', 'Power BI dashboard', 'Power BI report', 'custom Power BI dashboard',
+    'business intelligence consultant', 'data visualization expert', 'KPI dashboard', 'sales dashboard',
+    // Location-Based
+    'Power BI Mississauga', 'Power BI Toronto', 'Power BI GTA', 'Power BI consultant Ontario',
+    // Cost Intent
+    'Power BI cost', 'Power BI pricing', 'Power BI training', 'learn Power BI'
   ],
   alternates: {
     canonical: "/power-bi-consultant",
   },
   openGraph: {
-    title: "Need a Power BI Consultant? Local Expert in Mississauga & GTA",
-    description: "Custom Power BI dashboards and data visualization for Ontario businesses. Free consultation.",
+    title: "Power BI Consultant Near Me | Custom Dashboards | Free Consultation",
+    description: "Local Power BI expert in Mississauga & GTA. Custom dashboards, data visualization, KPI tracking.",
     url: "/power-bi-consultant",
   },
 };

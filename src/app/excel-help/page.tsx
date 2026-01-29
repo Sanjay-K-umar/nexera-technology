@@ -5,21 +5,25 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle2, FileSpreadsheet, Clock, DollarSign, HelpCircle, Zap, AlertTriangle, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Excel Help Near Me | Fix Excel Problems Mississauga, Toronto, GTA | Same Day Service",
-  description: "Need Excel help? Struggling with spreadsheets, formulas, VBA errors, or slow files? Local Excel expert in Mississauga serving Toronto & GTA. Same-day help available. Free quote!",
+  title: "Excel Help Near Me | Fix Excel Fast | Mississauga, Toronto, GTA | Same Day",
+  description: "Excel not working? Get instant Excel help from a local expert! Fix formulas, VBA errors, slow files, corrupted spreadsheets. Same-day service in Mississauga, Toronto & GTA. From $75.",
   keywords: [
-    'Excel help near me', 'Excel expert near me', 'fix Excel spreadsheet',
-    'Excel formula help', 'Excel not working', 'Excel file corrupted',
-    'VBA error fix', 'slow Excel file', 'Excel consultant Mississauga',
-    'Excel help Toronto', 'spreadsheet help GTA', 'Excel problems fix',
-    'Excel macro not working', 'Excel crashing', 'Excel data recovery'
+    // Near Me (Highest Priority)
+    'Excel help near me', 'Excel expert near me', 'Excel consultant near me', 'spreadsheet help near me',
+    // Problem-Based (High Intent)
+    'fix Excel spreadsheet', 'Excel formula not working', 'Excel file corrupted', 'Excel running slow',
+    'VBA macro error', 'Excel crashing', 'Excel formulas broken', 'fix slow Excel',
+    // Location-Based
+    'Excel help Mississauga', 'Excel consultant Toronto', 'Excel expert GTA', 'Excel fix Brampton',
+    // Service-Based
+    'Excel repair service', 'Excel troubleshooting', 'Excel data recovery', 'Excel template creation'
   ],
   alternates: {
     canonical: "/excel-help",
   },
   openGraph: {
-    title: "Need Excel Help? Local Expert Available Today | Mississauga & GTA",
-    description: "Quick Excel fixes for formulas, VBA, slow files, and more. Same-day service available.",
+    title: "Need Excel Help? Local Expert Available Today | From $75",
+    description: "Quick Excel fixes - formulas, VBA, slow files. Same-day service in Mississauga, Toronto & GTA.",
     url: "/excel-help",
   },
 };

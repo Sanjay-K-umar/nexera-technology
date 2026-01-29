@@ -5,19 +5,27 @@ import { Card } from '@/components/ui/card'
 import { ArrowRight, BarChart3, TrendingUp, Clock, Target, CheckCircle, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Power BI Dashboard Services Mississauga | Hire Power BI Consultant Ontario",
-  description: "Need a Power BI expert in the GTA? Hire Nexera for custom Power BI dashboard services in Mississauga & Ontario. Affordable consulting for small business reporting & analytics. Get a free quote today.",
+  title: "#1 Power BI Dashboard Services Ontario | Expert Consultant Mississauga & GTA",
+  description: "Transform data into insights! Top-rated Power BI consultant in Mississauga, Toronto & GTA. Custom dashboards, real-time reports, data visualization. Free consultation.",
   keywords: [
-    'hire Power BI consultant Ontario', 'Power BI dashboard services Mississauga', 'Power BI developer for small business',
-    'Power BI consulting services GTA', 'Power BI expert near me', 'custom Power BI solutions Ontario',
-    'Power BI report development cost', 'small business BI consultant', 'data analytics services Mississauga'
+    // Primary High-Intent
+    'Power BI dashboard services', 'Power BI consultant Ontario', 'hire Power BI developer Mississauga',
+    'Power BI consulting services GTA', 'Power BI expert near me', 'custom Power BI solutions',
+    // Problem-Based
+    'visualize business data', 'real-time dashboard', 'automate business reports', 'Excel to Power BI migration',
+    // Location-Based
+    'Power BI Toronto', 'Power BI Mississauga', 'Power BI Brampton', 'data visualization GTA',
+    // Specific Services
+    'sales dashboard Power BI', 'KPI dashboard development', 'Power BI training Ontario', 'Power BI report builder',
+    // Cost/Hiring Intent
+    'Power BI cost', 'Power BI pricing', 'hire Power BI freelancer', 'affordable BI consulting'
   ],
   alternates: {
     canonical: '/services/power-bi-dashboards',
   },
   openGraph: {
-    title: 'Power BI Services Near Me | Nexera Technology',
-    description: 'Expert Power BI consultant in Mississauga, GTA. Transform your data into visual insights with custom dashboards.',
+    title: 'Power BI Dashboard Expert | See Your Business Data Clearly | GTA',
+    description: 'Top-rated Power BI consultant. Custom dashboards, real-time insights, KPI tracking. Free consultation.',
     url: '/services/power-bi-dashboards',
     type: 'website',
   },

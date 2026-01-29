@@ -5,21 +5,25 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle2, Clock, HelpCircle, Phone, Globe, Palette, Smartphone, Search, Zap, ShoppingCart, Building2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Website Developer Near Me | Build Website Mississauga, Toronto, GTA | Affordable Prices",
-  description: "Need a website? Local web developer in Mississauga building professional websites for small businesses. Custom design, fast loading, mobile-friendly. Serving Toronto & GTA. Free quote!",
+  title: "Website Developer Near Me | Affordable Websites Mississauga, Toronto, GTA",
+  description: "Need a website? Local web developer in Mississauga building professional sites for small businesses. Custom design, mobile-friendly, SEO included. From $800. Free quote!",
   keywords: [
-    'website developer near me', 'web developer near me', 'build website',
-    'small business website', 'website designer Mississauga', 'affordable web design',
-    'web developer Toronto', 'website builder GTA', 'custom website Ontario',
-    'business website cost', 'professional website design', 'local web designer',
-    'website for my business', 'need a website', 'create website for small business'
+    // Near Me (Highest Priority)
+    'website developer near me', 'web developer near me', 'website designer near me', 'web design near me',
+    // Problem-Based (High Intent)
+    'build website', 'need a website', 'create website for business', 'small business website',
+    'website for my business', 'get website made', 'professional website design',
+    // Location-Based
+    'website developer Mississauga', 'web developer Toronto', 'website designer GTA', 'web design Brampton',
+    // Cost Intent
+    'affordable web design', 'website cost', 'cheap website design', 'website pricing Ontario'
   ],
   alternates: {
     canonical: "/website-developer",
   },
   openGraph: {
-    title: "Need a Website? Local Developer in Mississauga & GTA | Affordable Prices",
-    description: "Professional websites for small businesses. Custom design, mobile-friendly, SEO included. Free consultation.",
+    title: "Website Developer Near Me | Professional Sites From $800",
+    description: "Local web developer in Mississauga & GTA. Custom design, mobile-friendly, SEO included. Free quote!",
     url: "/website-developer",
   },
 };
