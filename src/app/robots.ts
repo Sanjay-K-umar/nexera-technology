@@ -8,9 +8,29 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/admin/'],
+        disallow: [
+          '/api/',
+          '/admin/',
+          '/_next/static/',
+          // Block legacy Shopify/eCommerce paths
+          '/collections/',
+          '/products/',
+          '/checkout',
+          '/checkout/',
+          '/cart',
+          '/cart/',
+          '/account',
+          '/account/',
+          // Block legacy WordPress/CMS paths
+          '/wp-admin/',
+          '/wp-content/',
+          '/wp-includes/',
+          '/customer-cabinet',
+          '/pages/',
+        ],
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   }
 }

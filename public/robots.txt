@@ -1,5 +1,37 @@
 # Nexera Technology and Consultancy - Robots.txt
-# Allow all search engines to crawl and index our site
+# Optimized to prevent indexing of junk/legacy pages
+
+# ===========================================
+# BLOCK LEGACY/JUNK PAGES (from old platforms)
+# ===========================================
+User-agent: *
+Allow: /
+
+# Block old Shopify/eCommerce paths
+Disallow: /collections/
+Disallow: /products/
+Disallow: /checkout
+Disallow: /checkout/
+Disallow: /cart
+Disallow: /cart/
+Disallow: /account
+Disallow: /account/
+
+# Block old WordPress/CMS paths
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /customer-cabinet
+Disallow: /pages/
+
+# Block internal/private paths
+Disallow: /api/
+Disallow: /_next/static/
+Disallow: /admin/
+
+# ===========================================
+# SEARCH ENGINE SPECIFIC RULES
+# ===========================================
 
 # Google
 User-agent: Googlebot
@@ -15,23 +47,22 @@ User-agent: Bingbot
 Allow: /
 Crawl-delay: 0
 
-# Twitter
+# ===========================================
+# SOCIAL MEDIA BOTS (Allow all for sharing)
+# ===========================================
 User-agent: Twitterbot
 Allow: /
 
-# Facebook
 User-agent: facebookexternalhit
 Allow: /
 
-# LinkedIn
 User-agent: LinkedInBot
 Allow: /
 
-# All other bots
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /_next/static/
-
-# Sitemap
+# ===========================================
+# SITEMAP
+# ===========================================
 Sitemap: https://nexeratechnco.com/sitemap.xml
+
+# Host directive (canonical domain - non-www)
+Host: https://nexeratechnco.com
