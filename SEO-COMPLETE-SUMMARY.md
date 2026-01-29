@@ -205,9 +205,9 @@ Before you're done:
 
 **Deploy (Required):**
 - [ ] Committed all changes to Git
-- [ ] Set `NEXT_PUBLIC_SITE_URL` environment variable
+- [ ] Set `NEXT_PUBLIC_SITE_URL` environment variable in Vercel
 - [ ] Created `og-image.jpg` (1200x630px)
-- [ ] Deployed to Netlify/production
+- [ ] Deployed to Vercel (auto-deploys on git push)
 
 **Google Setup (Critical):**
 - [ ] Created Google Business Profile
